@@ -5,10 +5,10 @@ import TheWelcome from './components/TheWelcome.vue'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+    <img alt="Vue logo" class="logo" src="https://miro.medium.com/v2/resize:fit:1024/1*mwXHpdt6CTQHxH78dwc6NA.jpeg" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="Salut" />
     </div>
   </header>
 
