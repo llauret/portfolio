@@ -6,7 +6,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: "/llauret-iut90.github.io/",
+  base: "/llauret/",
   plugins: [
     vue(),
     vueDevTools(),
