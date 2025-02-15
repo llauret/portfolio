@@ -1,0 +1,1 @@
+import{_ as r,c as o,a as s,F as t,o as n}from"./index-GGKQwflT.js";const a={};function l(u,e){return n(),o(t,null,[e[0]||(e[0]=s("h1",null,"Projets",-1)),e[1]||(e[1]=s("p",null,"Voici quelques projets que j'ai réalisés.",-1))],64)}const i=r(a,[["render",l]]);export{i as default};
