@@ -5,7 +5,10 @@ const router = createRouter({
         path: '/', name: 'home', component: () => import('./views/Home.vue')
     }, {
         path: '/projects', name: 'projets', component: () => import('./views/Projects.vue')
-    }],
+    }, {
+        path: '/skills', name: 'competence', component: () => import('./views/Skills.vue')
+    }
+    ],
 });
 
 export default router;
