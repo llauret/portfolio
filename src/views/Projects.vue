@@ -14,10 +14,14 @@
 
         Documentation avec VitePress et Test avec Vitest, hosting en VM/Container Docker
         "
-        image="mode-histo.png"
         link-skills=""
         title="Alternance - Numérisation processus papier"
-    ></project-card>
+    >
+      <template #model3D>
+        <music-note3-d model="doc"></music-note3-d>
+      </template>
+    </project-card>
+
     <project-card
         :technoimgs="['kotlin.png']"
         description="Développement d'une application mobile - Lecteur de musique
@@ -33,7 +37,7 @@
         title="Lecteur de musique"
     >
       <template #model3D>
-        <music-note3-d></music-note3-d>
+        <music-note3-d model="note"></music-note3-d>
       </template>
     </project-card>
     <project-card
