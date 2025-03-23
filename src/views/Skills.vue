@@ -13,12 +13,12 @@
     <div class="content-layout">
       <div class="skills-sidebar">
         <ue-card
-            v-for="(skill, index) in skills[0]"
+            v-for="(skill, index) in skills"
             :key="index"
             :class="{ active: selectedSkill === index }"
             :title="skill.title"
             class="skill-card"
-            @mouseenter="selectedSkill = index"
+            @mousedown="selectedSkill = index"
         >
           <div
               :class="{ active: selectedSkill === index }"
@@ -28,7 +28,10 @@
       </div>
 
       <div class="main-content">
-        <competence1></competence1>
+        <Competence
+            :ac="skills[selectedSkill].title"
+            :annee="years[selectedYear]"
+        ></Competence>
       </div>
     </div>
   </div>
@@ -37,22 +40,21 @@
 <script setup>
 import {onMounted, onUnmounted, ref} from 'vue';
 import UeCard from "@/components/ue-card.vue";
-import Competence1 from "@/components/3a/compétence 1/competence-1.vue";
+import Competence from "@/components/competence.vue";
 
-const selectedYear = ref(2);
+const selectedYear = ref(1);
 const selectedSkill = ref(0);
 const years = ["1ère année", "2ème année", "3ème année"];
 
-const skills = [
-  [
-    {title: "Réaliser un développement d'application", color: "#47443b"},
-    {title: "Optimiser des applications", color: "#47443b"},
-    {title: "Administrer des systèmes informatiques communicants complexes", color: "#47443b"},
-    {title: "Gérer des données de l'information", color: "#47443b"},
-    {title: "Conduire un projet", color: "#47443b"},
-    {title: "Collaborer au sein d'une équipe informatique", color: "#47443b"}
-  ]
-];
+const skills =
+    [
+      {title: "Réaliser un développement d'application", color: "#47443b"},
+      {title: "Optimiser des applications", color: "#47443b"},
+      {title: "Administrer des systèmes informatiques communicants complexes", color: "#47443b"},
+      {title: "Gérer des données de l'information", color: "#47443b"},
+      {title: "Conduire un projet", color: "#47443b"},
+      {title: "Collaborer au sein d'une équipe informatique", color: "#47443b"}
+    ];
 
 function handleKeyDown(event) {
   if (event.key === 'ArrowLeft') {
@@ -60,9 +62,9 @@ function handleKeyDown(event) {
   } else if (event.key === 'ArrowRight') {
     selectedYear.value = (selectedYear.value + 1) % years.length;
   } else if (event.key === 'ArrowDown') {
-    selectedSkill.value = (selectedSkill.value + 1) % skills[0].length;
+    selectedSkill.value = (selectedSkill.value + 1) % skills.length;
   } else if (event.key === 'ArrowUp') {
-    selectedSkill.value = (selectedSkill.value - 1 + skills[0].length) % skills[0].length;
+    selectedSkill.value = (selectedSkill.value - 1 + skills.length) % skills.length;
   }
 }
 
