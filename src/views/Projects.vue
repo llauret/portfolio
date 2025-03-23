@@ -18,7 +18,7 @@
         title="Alternance - Numérisation processus papier"
     >
       <template #model3D>
-        <music-note3-d model="doc"></music-note3-d>
+        <music-note3-d model3-d="doc"></music-note3-d>
       </template>
     </project-card>
 
@@ -37,7 +37,7 @@
         title="Lecteur de musique"
     >
       <template #model3D>
-        <music-note3-d model="note"></music-note3-d>
+        <music-note3-d model3-d="note"></music-note3-d>
       </template>
     </project-card>
     <project-card

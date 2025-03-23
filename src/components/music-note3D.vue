@@ -6,10 +6,9 @@
 import {onBeforeUnmount, onMounted, ref} from 'vue';
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader.js';
-import {string} from "three/tsl";
 
 const props = defineProps({
-  model: string
+  model3D: String
 })
 
 const container = ref(null);
@@ -64,7 +63,7 @@ function loadModel() {
   const scale = 0.7;
 
   loader.load(
-      `/portfolio/${props.model}.glb`,
+      `/portfolio/${props.model3D}.glb`,
       (gltf) => {
         model = gltf.scene;
 
@@ -117,7 +116,7 @@ function onWindowResize() {
 <style scoped>
 .three-container {
   width: 30%;
-  max-height: 100%;
+  height: 100%;
   border: 1px solid #454138;
   border-radius: 4px;
   overflow: hidden;
