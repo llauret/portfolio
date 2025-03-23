@@ -82,9 +82,11 @@ function loadModel() {
 
         model = container;
 
-        mixer = new THREE.AnimationMixer(gltf.scene);
-        const action = mixer.clipAction(gltf.animations[0]);
-        action.play();
+        if (gltf.animations.length > 0) {
+          mixer = new THREE.AnimationMixer(gltf.scene);
+          const action = mixer.clipAction(gltf.animations[0]);
+          action.play();
+        }
       },
       (xhr) => {
         console.log((xhr.loaded / xhr.total * 100) + '% loaded');

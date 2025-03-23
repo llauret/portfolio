@@ -1,5 +1,5 @@
 <template>
-  <h1>Projets</h1>
+  <h1>Projets (et autres... voir Github)</h1>
 
   <div class="grid-container">
     <project-card
