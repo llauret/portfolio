@@ -1,5 +1,6 @@
 <template>
   <div :style="{ backgroundColor: color }" class="card">
+    <slot></slot>
     {{ title }}
   </div>
 </template>
@@ -17,7 +18,10 @@ defineProps({
   color: white;
   padding: 1rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
   cursor: pointer;
 }
 </style>

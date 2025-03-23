@@ -10,40 +10,69 @@
       </div>
     </div>
 
-    <div v-if="selectedYear !== null" class="skills-content">
-
-      <div class="skills-grid">
+    <div class="content-layout">
+      <div class="skills-sidebar">
         <ue-card
-            v-for="(skill, index) in skills[selectedYear]"
+            v-for="(skill, index) in skills[0]"
             :key="index"
-            :color="skill.color"
+            :class="{ active: selectedSkill === index }"
             :title="skill.title"
             class="skill-card"
-        />
+            @mouseenter="selectedSkill = index"
+        >
+          <div
+              :class="{ active: selectedSkill === index }"
+              class="square"
+          ></div>
+        </ue-card>
+      </div>
+
+      <div class="main-content">
+        <competence1></competence1>
       </div>
     </div>
-    <competence1></competence1>
   </div>
 </template>
 
 <script setup>
-import {ref} from 'vue';
+import {onMounted, onUnmounted, ref} from 'vue';
 import UeCard from "@/components/ue-card.vue";
 import Competence1 from "@/components/3a/compétence 1/competence-1.vue";
 
-const selectedYear = ref(3);
+const selectedYear = ref(2);
+const selectedSkill = ref(0);
 const years = ["1ère année", "2ème année", "3ème année"];
 
 const skills = [
   [
-    {title: "Réaliser un développement d’application", color: "#454138"},
-    {title: "Optimiser des applications", color: "#5D7052"},
-    {title: "Administrer des systèmes informatiques communicants complexes", color: "#8B8778"},
-    {title: "Gérer des données de l’information", color: "#6A6156"},
-    {title: "Conduire un projet", color: "#A39171"},
-    {title: "Collaborer au sein d’une équipe informatique", color: "#787058"}
+    {title: "Réaliser un développement d'application", color: "#47443b"},
+    {title: "Optimiser des applications", color: "#47443b"},
+    {title: "Administrer des systèmes informatiques communicants complexes", color: "#47443b"},
+    {title: "Gérer des données de l'information", color: "#47443b"},
+    {title: "Conduire un projet", color: "#47443b"},
+    {title: "Collaborer au sein d'une équipe informatique", color: "#47443b"}
   ]
 ];
+
+function handleKeyDown(event) {
+  if (event.key === 'ArrowLeft') {
+    selectedYear.value = (selectedYear.value - 1 + years.length) % years.length;
+  } else if (event.key === 'ArrowRight') {
+    selectedYear.value = (selectedYear.value + 1) % years.length;
+  } else if (event.key === 'ArrowDown') {
+    selectedSkill.value = (selectedSkill.value + 1) % skills[0].length;
+  } else if (event.key === 'ArrowUp') {
+    selectedSkill.value = (selectedSkill.value - 1 + skills[0].length) % skills[0].length;
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('keydown', handleKeyDown);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('keydown', handleKeyDown);
+});
 
 function selectYear(index) {
   selectedYear.value = index;
@@ -51,12 +80,19 @@ function selectYear(index) {
 </script>
 
 <style scoped>
+.square {
+  min-width: 20px;
+  max-width: 20px;
+  min-height: 20px;
+  max-height: 20px;
+  flex-shrink: 0;
+  background-color: #4d4a41;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease;
+}
 
-
-.description {
-  font-size: 1rem;
-  font-weight: normal;
-  color: #2c3e50;
+.square.active {
+  background-color: #d4ceb6;
 }
 
 .skills-container {
@@ -65,6 +101,29 @@ function selectYear(index) {
   width: 100%;
   min-height: 80vh;
   padding: 2rem;
+}
+
+.content-layout {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 2rem;
+}
+
+.skills-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  gap: 1.5rem;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.main-content {
+  flex: 1;
+  overflow-y: auto;
+  height: 75vh;
+  border: 1px solid #454138;
+  padding: 1rem;
 }
 
 .selection-annee {
@@ -78,9 +137,10 @@ function selectYear(index) {
 }
 
 .selection-annee > div {
-  background: #454138;
+  background-color: #c0bba5;
+  background-size: 0.3rem 0.3rem;
+  background-image: linear-gradient(to right, #bab59f 1px, rgba(204, 200, 177, 0) 1px), linear-gradient(to bottom, #bab59f 1px, rgba(204, 200, 177, 0) 1px);;
   padding: 1rem 2rem;
-  border-radius: 8px;
   color: white;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -89,67 +149,73 @@ function selectYear(index) {
 }
 
 .selection-annee > div:hover {
-  background: #cbc4a7;
-  color: #454138;
+  background-color: #4d4a41;
+  background-size: 0.3rem 0.3rem;
+  background-image: linear-gradient(to right, #47443b 1px, rgba(204, 200, 177, 0) 1px), linear-gradient(to bottom, #47443b 1px, rgba(204, 200, 177, 0) 1px);;
   transform: translateY(-3px);
 }
 
 .selection-annee > div.active {
-  background: #cbc4a7;
-  color: #454138;
+  background-color: #4d4a41;
+  background-size: 0.3rem 0.3rem;
+  background-image: linear-gradient(to right, #47443b 1px, rgba(204, 200, 177, 0) 1px), linear-gradient(to bottom, #47443b 1px, rgba(204, 200, 177, 0) 1px);;
+  color: #c0bba5;
   transform: translateY(-3px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-.skills-content {
-  width: 100%;
-  animation: fadeIn 0.5s ease-in-out;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 2rem;
-  width: 100%;
-}
-
 .skill-card {
   width: 100%;
-  height: 120px;
-  border-radius: 8px;
+  height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: bold;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
+  background-color: #c0bba5;
+  background-size: 0.3rem 0.3rem;
+  background-image: linear-gradient(to right, #bab59f 1px, rgba(204, 200, 177, 0) 1px), linear-gradient(to bottom, #bab59f 1px, rgba(204, 200, 177, 0) 1px);;
+  text-align: center;
+  opacity: 50%;
+  color: #454138;
+}
+
+.skill-card.active {
+  color: #c0bba5;
+  opacity: 100%;
+  background-color: #4d4a41;
+  background-size: 0.3rem 0.3rem;
+  background-image: linear-gradient(to right, #47443b 1px, rgba(204, 200, 177, 0) 1px), linear-gradient(to bottom, #47443b 1px, rgba(204, 200, 177, 0) 1px);;
 }
 
 .skill-card:hover {
-  transform: translateY(-5px) scale(1.03);
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-.select-prompt {
-  text-align: center;
-  color: #787058;
-  font-style: italic;
-  margin-top: 3rem;
+  transform: translateX(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateX(-20px);
   }
   to {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 
 @media (max-width: 768px) {
+  .content-layout {
+    flex-direction: column;
+  }
+
+  .skills-sidebar {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
   .selection-annee {
     flex-direction: column;
     gap: 1rem;

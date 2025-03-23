@@ -109,6 +109,7 @@ defineProps({
   border: 1px solid #454138;
   padding: 0.5rem;
   white-space: pre-line;
+  overflow-y: auto;
 }
 
 .project-link {

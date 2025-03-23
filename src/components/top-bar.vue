@@ -27,7 +27,7 @@
           <router-link to="/projects">Projets</router-link>
         </li>
         <li>
-          <a href="https://mahara-info.iut-bm.univ-fcomte.fr/view/view.php?t=d60b01973f28bf5c7157">Compétences</a>
+          <router-link to="/skills">Compétences</router-link>
         </li>
       </ul>
     </nav>
