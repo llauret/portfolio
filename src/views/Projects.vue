@@ -29,10 +29,13 @@
     ■ Téléchargement de musique
     ■ Etc.
     "
-        image="logo_musique.png"
         link="https://github.com/llauret/ArcaneMusic"
         title="Lecteur de musique"
-    ></project-card>
+    >
+      <template #model3D>
+        <music-note3-d></music-note3-d>
+      </template>
+    </project-card>
     <project-card
         :technoimgs="['java.png']"
         description="Transcription Image en son avec JavaFX et OpenCV"
@@ -72,6 +75,7 @@
 
 <script setup>
 import ProjectCard from "@/components/project-card.vue";
+import MusicNote3D from "@/components/music-note3D.vue";
 </script>
 
 <style scoped>

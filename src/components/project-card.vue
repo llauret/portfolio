@@ -18,6 +18,7 @@
 
     <div class="content">
       <img v-if="image" id="illustration" :src="image" alt="project image" class="project-image"/>
+      <slot name="model3D"></slot>
       <iframe v-if="pdf" id="illustration" :src="pdf" class="project-image"></iframe>
       <div class="description">
         <p>{{ description }}</p>
