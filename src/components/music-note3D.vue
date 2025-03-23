@@ -64,7 +64,8 @@ function loadModel() {
   const scale = 0.7;
 
   loader.load(
-      `/portfolio/${props.model}.glb`,
+      // `/portfolio/${props.model}.glb`,
+      `/portfolio/note.glb`,
       (gltf) => {
         model = gltf.scene;
 
