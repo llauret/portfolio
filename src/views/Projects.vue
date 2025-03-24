@@ -19,7 +19,7 @@
 
         ■ Permet de veiller à la qualité des relevés sur ligne de production, et agir en conséquence.
         "
-        link-skills="https://mahara-info.iut-bm.univ-fcomte.fr/view/view.php?t=d60b01973f28bf5c7157"
+        link-skills="/portfolio/#/skills"
         title="Alternance - Numérisation processus papier"
     >
       <template #model3D>

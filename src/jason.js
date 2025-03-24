@@ -1089,7 +1089,8 @@ export default {
         },
         "Gérer les données de l'information"                           : {
             "AC1": {
-                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'> Optimiser une" +
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 1 : Optimiser" +
+                    " une" +
                     " base de données, interagir avec une application et mettre en œuvre la sécurité </span> <span" +
                     " style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'> AC 1 : Optimiser les" +
                     " modèles" +
@@ -1160,7 +1161,8 @@ export default {
                     "      <img alt=\"\" src=\"public/deleteligne.svg\">"
             },
             "AC3": {
-                title  : "AC 3 : Organiser la restitution de données à travers la programmation et la visualisation",
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 3 : Organiser" +
+                    " la restitution de données à travers la programmation et la visualisation </span>",
                 content: "Actuellement, j'utilise un script Python avec Pandas pour créer ma base de données à partir de fichiers Excel. Je\n" +
                     "      prévois d'établir une routine de sauvegarde pour assurer la sécurité des données à l'avenir.\n" +
                     "      <span style=\"font-weight: bold\">Exemple : (Méthode obsolète) </span>\n" +

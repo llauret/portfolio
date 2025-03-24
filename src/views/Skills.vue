@@ -18,7 +18,7 @@
             :class="{ active: selectedSkill === index }"
             :title="skill.title"
             class="skill-card"
-            @mouseenter="selectedSkill = index"
+            @mouseenter="handleSkillChange(index)"
         >
           <div
               :class="{ active: selectedSkill === index }"
@@ -27,7 +27,7 @@
         </ue-card>
       </div>
 
-      <div class="main-content">
+      <div ref="mainContentRef" class="main-content">
         <Competence
             :ac="skills[selectedSkill].title"
             :annee="years[selectedYear]"
@@ -38,32 +38,33 @@
 </template>
 
 <script setup>
-import {onMounted, onUnmounted, ref} from 'vue';
+import {onMounted, onUnmounted, ref, watch} from 'vue';
 import UeCard from "@/components/ue-card.vue";
 import Competence from "@/components/competence.vue";
 
-const selectedYear = ref(1);
-const selectedSkill = ref(0);
-const years = ["1ère année", "2ème année", "3ème année"];
+const selectedYear   = ref(1);
+const selectedSkill  = ref(0);
+const mainContentRef = ref(null);
+const years          = ["1ère année", "2ème année", "3ème année"];
 
 const skills =
-    [
-      {title: "Réaliser un développement d'application", color: "#47443b"},
-      {title: "Optimiser des applications", color: "#47443b"},
-      {title: "Administrer des systèmes informatiques communicants complexes", color: "#47443b"},
-      {title: "Gérer les données de l'information", color: "#47443b"},
-      {title: "Conduire un projet", color: "#47443b"},
-      {title: "Collaborer au sein d'une équipe informatique", color: "#47443b"}
-    ];
+          [
+            {title: "Réaliser un développement d'application"},
+            {title: "Optimiser des applications"},
+            {title: "Administrer des systèmes informatiques communicants complexes"},
+            {title: "Gérer les données de l'information"},
+            {title: "Conduire un projet"},
+            {title: "Collaborer au sein d'une équipe informatique"}
+          ];
 
 function handleKeyDown(event) {
-  if (event.key === 'ArrowLeft') {
+  if(event.key === 'ArrowLeft') {
     selectedYear.value = (selectedYear.value - 1 + years.length) % years.length;
-  } else if (event.key === 'ArrowRight') {
+  } else if(event.key === 'ArrowRight') {
     selectedYear.value = (selectedYear.value + 1) % years.length;
-  } else if (event.key === 'ArrowDown') {
+  } else if(event.key === 'ArrowDown') {
     selectedSkill.value = (selectedSkill.value + 1) % skills.length;
-  } else if (event.key === 'ArrowUp') {
+  } else if(event.key === 'ArrowUp') {
     selectedSkill.value = (selectedSkill.value - 1 + skills.length) % skills.length;
   }
 }
@@ -76,9 +77,16 @@ onUnmounted(() => {
   window.removeEventListener('keydown', handleKeyDown);
 });
 
-function selectYear(index) {
-  selectedYear.value = index;
+const selectYear        = (index) => {selectedYear.value = index};
+const handleSkillChange = (index) => {selectedSkill.value = index};
+
+const resetScroll = () => {
+  if(mainContentRef.value) mainContentRef.value.scrollTop = 0;
 }
+
+watch([selectedYear, selectedSkill], () => {
+  resetScroll();
+});
 </script>
 
 <style scoped>
@@ -170,7 +178,6 @@ function selectYear(index) {
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: center;
   align-items: center;
   font-size: 0.9rem;
   font-weight: bold;
