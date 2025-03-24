@@ -71,7 +71,7 @@ export default {
                     "        Bien prendre en compte les exigences, c’est vraiment important pour ne pas réaliser une solution en désaccord\n" +
                     "        avec l’envie des clients et éviter cette situation :\n" +
                     "        <br>\n" +
-                    "        <img alt=\"\" src=\"public/development.jpg\">\n" +
+                    "        <img alt=\"\" src=\"/portfolio/development.jpg\">\n" +
                     "        <hr>\n" +
                     "        <h2>Conception de l'application</h2>\n" +
                     "        <h3>Spécifications fonctionnelles</h3>\n" +
@@ -96,7 +96,7 @@ export default {
                     "        en première année et actuellement en deuxième année pour tout ce qui concerne les bases de données et la\n" +
                     "        création d’interface.\n" +
                     "      </div>\n" +
-                    "      <img alt=\"\" src=\"public/clientapi.png\">\n" +
+                    "      <img alt=\"\" src=\"/portfolio/clientapi.png\">\n" +
                     "      <h5>Exemple d’implémentation :</h5>\n" +
                     "      L’ajout d’un bouton d’édition\n" +
                     "      <ul>\n" +
@@ -113,7 +113,7 @@ export default {
                     "<p>&nbsp;</p>\n" +
                     "        Quand je clique sur ce bouton, j'entre en mode édition, je change mes composants et affiche ceux qui m'intéresse OK ça marche, mais maintenant comment je sauvegarde chaque valeur modifiée, afin que les données soient persistantes ? (Qu’elles restent lorsque je change de page ou que je \"refresh\" la page)\n" +
                     "      </span>\n" +
-                    "      <img alt=\"\" src=\"public/editmode.png\">\n" +
+                    "      <img alt=\"\" src=\"/portfolio/editmode.png\">\n" +
                     "\n" +
                     "      <h3> Spécification non fonctionnelles : </h3>\n" +
                     "\n" +
@@ -138,7 +138,7 @@ export default {
                     "        </ul>\n" +
                     "      </div>\n" +
                     "\n" +
-                    "      <img alt=\"\" src=\"public/schema_view_component.png\">\n" +
+                    "      <img alt=\"\" src=\"/portfolio/schema_view_component.png\">\n" +
                     "      <h2>Technologies</h2>\n" +
                     "      <div>\n" +
                     "        Pour développer tout cela, il faut choisir des technologies, comme vu à la page d’introduction, j’ai choisi :\n" +
@@ -182,7 +182,7 @@ export default {
                     "      </div>\n" +
                     "\n" +
                     "\n" +
-                    "      <img alt=\"\" src=\"public/interface_degraissage1_edit.png.1.png\">\n" +
+                    "      <img alt=\"\" src=\"/portfolio/interface_degraissage1_edit.png.1.png\">\n" +
                     "\n" +
                     "      <div>\n" +
                     "        L’affichage se base sur une requête sql avec sequelize où je récupère les attributs d’un produit, je boucle dans\n" +
@@ -196,7 +196,7 @@ export default {
                     "        C’est pour pouvoir afficher la même interface, mais avec les valeurs relevées quand j’accéderai aux fiches dans\n" +
                     "        ma partie historique.\n" +
                     "      </div>\n" +
-                    "      <img alt=\"\" src=\"public/Screen%20Shot%202024-06-13%20at%2014.08.02-fullpage.png\">\n" +
+                    "      <img alt=\"\" src=\"/portfolio/Screen%20Shot%202024-06-13%20at%2014.08.02-fullpage.png\">\n" +
                     "\n" +
                     "      Le problème qui se pose, c’est comment stocker cela dans ma base de données ? Ce sont les mêmes tables interrogées\n" +
                     "      mais avec une seule valeur qui change à fois ce qui me ferait créer des éléments à chaque nouvelle valeur avec\n" +
@@ -225,7 +225,7 @@ export default {
                     "      Exemple, rajouter une bulle de commentaires sur le relevé pour donner plus d’informations sur d’éventuels\n" +
                     "      problèmes.\n" +
                     "\n" +
-                    "      <img alt=\"\" src=\"public/ajout_commentaire.gif.1.gif\">\n" +
+                    "      <img alt=\"\" src=\"/portfolio/ajout_commentaire.gif.1.gif\">\n" +
                     "\n" +
                     "      Pourquoi je fais cela ?\n" +
                     "\n" +
@@ -249,7 +249,7 @@ export default {
                     "      pgAdmin je peux voir les requêtes I/O et avoir des graphiques, les différentes connexions, etc. Cela me permet de\n" +
                     "      monitorer la base de données.\n" +
                     "\n" +
-                    "      <img alt=\"\" src=\"public/schéma_data.png\">\n" +
+                    "      <img alt=\"\" src=\"/portfolio/schéma_data.png\">\n" +
                     "\n" +
                     "      <h3>Amélioration continue</h3>\n" +
                     "\n" +
@@ -344,29 +344,29 @@ export default {
                     "      de mains et faire en sorte que le site soit simple d'utilisation.\n" +
                     "      <div style=\"display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;\">\n" +
                     "        <figure>\n" +
-                    "          <img alt=\"\" src=\"public/interface_tuile.png\">\n" +
+                    "          <img alt=\"\" src=\"/portfolio/interface_tuile.png\">\n" +
                     "          <figcaption>Interface Tuile</figcaption>\n" +
                     "        </figure>\n" +
                     "        <figure>\n" +
-                    "          <img alt=\"\" src=\"public/interface_degraissage1.png\">\n" +
+                    "          <img alt=\"\" src=\"/portfolio/interface_degraissage1.png\">\n" +
                     "          <figcaption>Interface Dégraissage 1</figcaption>\n" +
                     "        </figure>\n" +
                     "        <figure>\n" +
-                    "          <img alt=\"\" src=\"public/interface_degraissage1_edit.png\">\n" +
+                    "          <img alt=\"\" src=\"/portfolio/interface_degraissage1_edit.png\">\n" +
                     "          <figcaption>Interface Dégraissage 1 Edit</figcaption>\n" +
                     "        </figure>\n" +
                     "      </div>\n" +
                     "      <figure>\n" +
-                    "        <img alt=\"\" src=\"public/interface_prototype.png\">\n" +
+                    "        <img alt=\"\" src=\"/portfolio/interface_prototype.png\">\n" +
                     "        <figcaption>Interface Prototype</figcaption>\n" +
                     "      </figure>\n" +
                     "      <div style=\"display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;\">\n" +
                     "        <figure>\n" +
-                    "          <img alt=\"\" src=\"public/interface_prototype2.png\">\n" +
+                    "          <img alt=\"\" src=\"/portfolio/interface_prototype2.png\">\n" +
                     "          <figcaption>Interface Prototype 2</figcaption>\n" +
                     "        </figure>\n" +
                     "        <figure>\n" +
-                    "          <img alt=\"\" src=\"public/interface_prototype3.png\">\n" +
+                    "          <img alt=\"\" src=\"/portfolio/interface_prototype3.png\">\n" +
                     "          <figcaption>Interface Prototype 3</figcaption>\n" +
                     "        </figure>\n" +
                     "      </div>"
@@ -515,7 +515,7 @@ export default {
                     "          style=\"color:#89ddff;\">        </span><span style=\"color:#eeffff;\">tableName</span><span\n" +
                     "          style=\"color:#89ddff;\">: </span><span style=\"color:#c3e88d;\">'ampere'</span><span style=\"color:#89ddff;\">,<br></span><span\n" +
                     "          style=\"color:#89ddff;\">        </span><span style=\"color:#eeffff;\">schema</span><span\n" +
-                    "          style=\"color:#89ddff;\">: </span><span style=\"color:#c3e88d;\">'public'</span><span style=\"color:#89ddff;\">,<br></span><span\n" +
+                    "          style=\"color:#89ddff;\">: </span><span style=\"color:#c3e88d;\">''</span><span style=\"color:#89ddff;\">,<br></span><span\n" +
                     "          style=\"color:#89ddff;\">        </span><span style=\"color:#eeffff;\">timestamps</span><span\n" +
                     "          style=\"color:#89ddff;\">: </span><span style=\"color:#c792ea;font-style:italic;\">false</span><span\n" +
                     "          style=\"color:#89ddff;\">,<br></span><span style=\"color:#89ddff;\">        </span><span style=\"color:#eeffff;\">indexes</span><span\n" +
@@ -655,7 +655,7 @@ export default {
                     "\n" +
                     "      Globalement j'ai appris à mettre en œuvre ce que j'ai pu voir en cours\n" +
                     "\n" +
-                    "      <img alt=\"\" src=\"public/exemple_doc.png\">"
+                    "      <img alt=\"\" src=\"/portfolio/exemple_doc.png\">"
             },
             "AC4": {
                 title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 4 : Vérifier et valider la qualité de l'application par les tests </span>",
@@ -951,7 +951,7 @@ export default {
                     "\n" +
                     "      Je charge les données dans un dataframe et à partir de là, je le manipule.\n" +
                     "      <p>&nbsp;</p>\n" +
-                    "      <img src=\"public/racine.svg\" alt=\"\">\n" +
+                    "      <img src=\"/portfolio/racine.svg\" alt=\"\">\n" +
                     "      Les données récupérées sont du coup sous dataframe, puis insérer en SQL\n" +
                     "      puis le récupère les données en format JSON lors de requêtes.<br>Récupérer les données avec python dans des Excel\n" +
                     "      a été un peu fastidieux, pour plusieurs raisons :\n" +
@@ -964,7 +964,7 @@ export default {
                     "      UTF-8. Certains fichiers, justement, ne pouvaient pas être ouverts via python car top vieux (1995). Pour la partie SQL et JSON, ce n'est pas compliqué à manipuler, je n'ai pas de requêtes complexes.\n" +
                     "      <br>Voici ma requête la plus longue et encore, elle est \"optimisable\".<br><br>\n" +
                     "\n" +
-                    "      <img src=\"public/get_caract.svg\" alt=\"\">"
+                    "      <img src=\"/portfolio/get_caract.svg\" alt=\"\">"
             },
             "AC2": {
                 title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 2 : Utiliser" +
@@ -978,8 +978,8 @@ export default {
                     "      <p>&nbsp;</p>\n" +
                     "      Pour l'implémentation je me suis aidé de mes cours, et de la documentation.\n" +
                     "\n" +
-                    "      <img src=\"public/user.svg\" alt=\"\">\n" +
-                    "      <img src=\"public/checkuser.svg\" alt=\"\">\n" +
+                    "      <img src=\"/portfolio/user.svg\" alt=\"\">\n" +
+                    "      <img src=\"/portfolio/checkuser.svg\" alt=\"\">\n" +
                     "\n" +
                     "      <h2> Comment ça fonctionne ? </h2>\n" +
                     "\n" +
@@ -987,9 +987,9 @@ export default {
                     "      <p>&nbsp;</p>\n" +
                     "      Sur ce site il n'y a pas d'intégration de la partie pour s'enregistrer dans la base de données. Les utilisateurs sont pré-identifiés et ont donc un login/mot de passe qui leurs sont attribué. Je rajouterai si il le faut une interface pour renseigner un utilisateur, mais interface uniquement accessible avec une authentification\n" +
                     "\n" +
-                    "      <img src=\"public/login_exemple.gif\" alt=\"\">\n" +
+                    "      <img src=\"/portfolio/login_exemple.gif\" alt=\"\">\n" +
                     "      Installation d'une garde (AuthGuard) pour éviter de se rendre sur des URL sous certaines conditions :\n" +
-                    "      <img src=\"public/guard.svg\" alt=\"\">\n" +
+                    "      <img src=\"/portfolio/guard.svg\" alt=\"\">\n" +
                     "\n" +
                     "      <p>&nbsp;</p>\n" +
                     "      Cela permet de restreindre l'accès à certaines pages en vérifiant par exemple si l'utilisateur est connecté ou si il a bien sélectionné des éléments avant de se rendre sur une page\n" +
@@ -1004,13 +1004,13 @@ export default {
                     "      <h3>Architecture des Applications</h3>\n" +
                     "      J'ai créé une API RESTful avec des requêtes http GET, PUT, POST, DELETE. Mon backend est fait avec Sequelize comme\n" +
                     "      ORM qui communique directement avec ma base de données en PostgreSQL. J'ai plusieurs endpoint.\n" +
-                    "      <img alt=\"\" src=\"public/endpoints.png\">\n" +
+                    "      <img alt=\"\" src=\"/portfolio/endpoints.png\">\n" +
                     "\n" +
                     "      J'ai pu apprendre à utiliser Swagger pour documenter mon API (on l'avait déjà vu en cours).\n" +
                     "\n" +
                     "      J'ai toutes mes routes dans un fichier `routes.js` et avec des requêtes http du côté frontend je récupère les\n" +
                     "      données :\n" +
-                    "      <img alt=\"\" src=\"public/get_ligne.svg\">\n" +
+                    "      <img alt=\"\" src=\"/portfolio/get_ligne.svg\">\n" +
                     "      Donc j'ai :\n" +
                     "      <ul>\n" +
                     "        <li>Ma base de donnée</li>\n" +
@@ -1031,14 +1031,14 @@ export default {
                     "      tester, vérifier que j'ai les bonnes données qui me sont retournées, après ça :\n" +
                     "\n" +
                     "      - Si la table sql n'existe pas en Sequelize, je la crée\n" +
-                    "      <img alt=\"\" src=\"public/table.svg\">\n" +
+                    "      <img alt=\"\" src=\"/portfolio/table.svg\">\n" +
                     "      Une fois le model crée (table) je la référence dans mon fichier regroupant les tables, je peux ensuite réaliser\n" +
                     "      des requêtes que je regroupe dans le dossier controllers exemple de requête basique\n" +
-                    "      <img alt=\"\" src=\"public/dash.svg\">\n" +
+                    "      <img alt=\"\" src=\"/portfolio/dash.svg\">\n" +
                     "      Après cela, je référence dans mes routes, afin que cela s'affiche avec swagger et que je puisse tester ma requête.\n" +
                     "      Le serveur tourne en fond donc je peux récupérer les informations aux routes qui m'intéressent depuis la partie\n" +
                     "      front-end, je récupère les données et les stock.\n" +
-                    "      <img alt=\"\" src=\"public/get_ligne.svg\">\n" +
+                    "      <img alt=\"\" src=\"/portfolio/get_ligne.svg\">\n" +
                     "      Pour le développement de l'API de manière générale, j'ai appliqué ce que je savais faire et ce que j'ai vu en\n" +
                     "      cours, je n'ai pas eu de problème en particulier pour la création de l'API"
             },
@@ -1069,7 +1069,7 @@ export default {
                     "\n" +
                     "        CMD [\"npm\", \"run\", \"docs:dev\"]\n" +
                     "      </pre>\n" +
-                    "      <img alt=\"\" src=\"public/docker_exemple.gif\">\n" +
+                    "      <img alt=\"\" src=\"/portfolio/docker_exemple.gif\">\n" +
                     "      En parallèle, j'ai l'intention de mettre en place une routine de sauvegarde régulière de la base de données. Cette\n" +
                     "      pratique de sauvegarde périodique garantira la sécurité des données et assurera une certaine résilience en cas de\n" +
                     "      problèmes techniques ou de perte accidentelle de données."
@@ -1139,13 +1139,13 @@ export default {
                     "        <li> One to Many</li>\n" +
                     "        <li> Many to Many</li>\n" +
                     "      </ul>\n" +
-                    "      <img alt=\"\" src=\"public/association.svg\">\n" +
+                    "      <img alt=\"\" src=\"/portfolio/association.svg\">\n" +
                     "      <div style=\"display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;\">\n" +
-                    "        <img alt=\"\" src=\"public/Amphenol_Test.png\">\n" +
-                    "        <img alt=\"\" src=\"public/exemple_method_python.png.1.png\">\n" +
-                    "        <img alt=\"\" src=\"public/mcd_amphenol.jpg\">\n" +
+                    "        <img alt=\"\" src=\"/portfolio/Amphenol_Test.png\">\n" +
+                    "        <img alt=\"\" src=\"/portfolio/exemple_method_python.png.1.png\">\n" +
+                    "        <img alt=\"\" src=\"/portfolio/mcd_amphenol.jpg\">\n" +
                     "      </div>\n" +
-                    "      <img alt=\"\" src=\"public/dernier_mcd.png\">"
+                    "      <img alt=\"\" src=\"/portfolio/dernier_mcd.png\">"
             },
             "AC2": {
                 title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'> AC 2 : Assurer la" +
@@ -1154,11 +1154,11 @@ export default {
                     "      <p>&nbsp;</p>\n" +
                     "      Les tables sont bien segmentés, il n'y a pas de doublons, il y a utilisation de clés étrangère pour joindre les\n" +
                     "      tables, tout cela permet l'intégrité des données\n" +
-                    "      <img alt=\"\" src=\"public/table_produit.png\">\n" +
+                    "      <img alt=\"\" src=\"/portfolio/table_produit.png\">\n" +
                     "      Pour la sécurité, comme dit précédemment il y a une authentification JWT côté front, pour pouvoir manipuler la\n" +
                     "      bdd. Les insertions, suppression et modifications se font via des transactions pour veiller à l'intégrité et\n" +
                     "      éviter qu'il y est des problèmes\n" +
-                    "      <img alt=\"\" src=\"public/deleteligne.svg\">"
+                    "      <img alt=\"\" src=\"/portfolio/deleteligne.svg\">"
             },
             "AC3": {
                 title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 3 : Organiser" +
@@ -1166,11 +1166,11 @@ export default {
                 content: "Actuellement, j'utilise un script Python avec Pandas pour créer ma base de données à partir de fichiers Excel. Je\n" +
                     "      prévois d'établir une routine de sauvegarde pour assurer la sécurité des données à l'avenir.\n" +
                     "      <span style=\"font-weight: bold\">Exemple : (Méthode obsolète) </span>\n" +
-                    "      <img alt=\"\" src=\"public/updateid.svg\">\n" +
+                    "      <img alt=\"\" src=\"/portfolio/updateid.svg\">\n" +
                     "      En récupérant mes données via l'API je les visualisent notamment avec un CRUD (Create, Read, Update, Delete) dans\n" +
                     "      un onglet spécifique au sein de mon application ça permettra aux personnes ayant accés au CRUD (via les rôles)\n" +
                     "      d'intéragir avec la base de donnée\n" +
-                    "      <img src=\"public/crud_exemple.gif\" alt=\"\">\n" +
+                    "      <img src=\"/portfolio/crud_exemple.gif\" alt=\"\">\n" +
                     "      J'ai pu apprendre à utiliser python avec Excel en utilisant des dataframe"
             },
             "AC4": {
@@ -1196,8 +1196,8 @@ export default {
                     "      l'afficher comme je le souhaite dans mon application. Mes résultats Json peuvent contenir des objets avec des\n" +
                     "      tableaux.\n" +
                     "      <span style=\"font-weight: bold\">Exemple :</span>\n" +
-                    "      <img alt=\"\" src=\"public/jason.svg\">\n" +
-                    "      <img alt=\"\" src=\"public/data_sql_exemple.png\">"
+                    "      <img alt=\"\" src=\"/portfolio/jason.svg\">\n" +
+                    "      <img alt=\"\" src=\"/portfolio/data_sql_exemple.png\">"
             }
         },
         "Conduire un projet"                                           : {
@@ -1247,7 +1247,7 @@ export default {
                     "      </ul>\n" +
                     "      <br>\n" +
                     "      Tout cela amène à : la possibilité de modifier les données via requêtes API (CRUD).\n" +
-                    "      <img src=\"public/jira_tasks_2.png\" alt=\"\">"
+                    "      <img src=\"/portfolio/jira_tasks_2.png\" alt=\"\">"
             },
             "AC3": {
                 title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'> AC 3 :" +
@@ -1310,8 +1310,8 @@ export default {
                     "      Finalement, quand j'ai reçu les données, là, à ce moment, je pouvais remodeler mon code afin d’accueillir les\n" +
                     "      vraies données, <span style=\"font-weight: bold\"> j'ai donc fait beaucoup de refactoring d'où les piques en Avril et en Mai.</span>\n" +
                     "      <div style=\"display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;\">\n" +
-                    "        <img src=\"public/github_add_del.png\" alt=\"\">\n" +
-                    "        <img src=\"public/commhisto.png\" alt=\"\">\n" +
+                    "        <img src=\"/portfolio/github_add_del.png\" alt=\"\">\n" +
+                    "        <img src=\"/portfolio/commhisto.png\" alt=\"\">\n" +
                     "      </div>"
             }
         },
