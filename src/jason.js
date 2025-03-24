@@ -2,15 +2,15 @@ export default {
     "1ère année": {
         "Réaliser un développement d'application": {
             "AC1": {
-                title: "",
+                title  : "",
                 content: ""
             }
         }
     },
     "2ème année": {
-        "Réaliser un développement d'application": {
+        "Réaliser un développement d'application"                      : {
             "AC1": {
-                title: "<span style='\ffont-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 1 : Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences </span>",
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 1 : Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences </span>",
                 content: "<div class=\"description\">\n" +
                     "        <h2> Comprendre les exigences</h2>\n" +
                     "        Analyse des exigences :\n" +
@@ -322,7 +322,9 @@ export default {
                     "      </pre>"
             },
             "AC2": {
-                title: "<span style='\ffont-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 2 : Appliquer des principes d’accessibilité et d’ergonomie </span>",
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 2 : Appliquer" +
+                    " des" +
+                    " principes d’accessibilité et d’ergonomie </span>",
                 content: "<hr>\n" +
                     "      L'application que je développe est un site web local conçu spécifiquement pour les employés chargés du contrôle\n" +
                     "      d'une ligne de production. Mon objectif principal est de simplifier au maximum l'utilisation de cette application,\n" +
@@ -370,7 +372,7 @@ export default {
                     "      </div>"
             },
             "AC3": {
-                title: "<span style='\ffont-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 3 : Adopter de bonnes pratiques de conception et de programmation </span>",
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 3 : Adopter de bonnes pratiques de conception et de programmation </span>",
                 content: "Pour le développement de l'application web, j'ai adopté une approche rigoureuse en segmentant bien mon code pour\n" +
                     "      m'y retrouver. Cette structure organisée m'a permis de maintenir une clarté et une cohérence dans mon code. Je\n" +
                     "      consacre du temps à refactor régulièrement mon code, évitant ainsi le \"code spaghetti\" et garantissant sa\n" +
@@ -655,7 +657,8 @@ export default {
                     "\n" +
                     "      <img alt=\"\" src=\"public/exemple_doc.png\">"
             },
-            "AC4": {title: "<span style='\ffont-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 4 : Vérifier et valider la qualité de l'application par les tests </span>",
+            "AC4": {
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 4 : Vérifier et valider la qualité de l'application par les tests </span>",
                 content: "En ce qui concerne les tests, j'utilise ViteTest qui est une librairie pour les projets déployer avec Vite avec\n" +
                     "      ViteTest je peux faire des tests Unitaire sur des méthodes, des tests sur des composants et des vues\n" +
                     "\n" +
@@ -924,13 +927,425 @@ export default {
                     "      <p>&nbsp;</p>\n" +
                     "      Les tests de composants et de vues fonctionnent un peu comme des tests d'intégration dans le sens où il faut\n" +
                     "      tester les intéractions entre les composants\n" +
-                    "      par exemple avec l'émission d’événement"},
+                    "      par exemple avec l'émission d’événement"
+            },
+        },
+        "Optimiser des applications"                                   : {
+            "AC1": {
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 1 : Choisir" +
+                    " des structures de données complexes adaptées au problème </span>",
+                content: "J'utilise Python pour extraire des données à partir de fichiers Excel en utilisant des dataframes. Cela me permet\n" +
+                    "      d'être rapide et efficace, car ces dataframes sont légers et rapides à manipuler. Une fois ces données extraites,\n" +
+                    "      je les intègre dans des tables SQL pour créer une base de données.\n" +
+                    "\n" +
+                    "      Je préfère le SQL, car il convient parfaitement à la structure et à l'interconnexion des données que j'utilise.\n" +
+                    "      Cela me permet de gérer efficacement les relations entre ces données. Pour effectuer des requêtes précises,\n" +
+                    "      j'utilise Sequelize, qui me donne la souplesse nécessaire pour récupérer les données dont j'ai besoin.\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      Cette approche, de l'extraction des données jusqu'à leur manipulation dans SQL avec l'utilisation de Sequelize\n" +
+                    "      pour les requêtes, me permet de gérer et d'utiliser les données de manière ciblée, répondant ainsi efficacement\n" +
+                    "      aux besoins spécifiques de mes projets.\n" +
+                    "\n" +
+                    "      Python, c'est pratique pour extraire les données et ça m'as permis de mieux utiliser les dataframes et la\n" +
+                    "      librairie openpyxl pour manipuler des fichiers Excel.\n" +
+                    "\n" +
+                    "      Je charge les données dans un dataframe et à partir de là, je le manipule.\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      <img src=\"public/racine.svg\" alt=\"\">\n" +
+                    "      Les données récupérées sont du coup sous dataframe, puis insérer en SQL\n" +
+                    "      puis le récupère les données en format JSON lors de requêtes.<br>Récupérer les données avec python dans des Excel\n" +
+                    "      a été un peu fastidieux, pour plusieurs raisons :\n" +
+                    "      <ul>\n" +
+                    "        <li>Les données étaient dispatchées dans plusieurs Excel.</li>\n" +
+                    "        <li>Les données n'étaient pas forcément justes.</li>\n" +
+                    "        <li>Il y avait beaucoup de formatages à faire.</li>\n" +
+                    "      </ul>\n" +
+                    "      <br>Surtout que le format sous Excel qui change en fonction de la version du Excel, ce n'est pas toujours en\n" +
+                    "      UTF-8. Certains fichiers, justement, ne pouvaient pas être ouverts via python car top vieux (1995). Pour la partie SQL et JSON, ce n'est pas compliqué à manipuler, je n'ai pas de requêtes complexes.\n" +
+                    "      <br>Voici ma requête la plus longue et encore, elle est \"optimisable\".<br><br>\n" +
+                    "\n" +
+                    "      <img src=\"public/get_caract.svg\" alt=\"\">"
+            },
+            "AC2": {
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 2 : Utiliser" +
+                    " des technique algorithmiques adaptées au problème</span>",
+                content: "J'utilise pas de tables de hachages, de graphes ou quoi que ce soit"
+            },
+            "AC3": {
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 3 :" +
+                    " Comprendre les enjeux et moyens de sécurisation des données et du code </span>",
+                content: "La sécurité des données est importante, pour cela j'ai dû mettre en place un système d'authentification pour pouvoir accéder à la manipulation des données partie CRUD (Create Read Update Delete) avec JWT. J'aurais pu simplement faire une requête à la base de données pour récupérer et comparer les mots de passes, mais avec JWT ça permet d'avoir un jeton réutilisable, et avoir une meilleure sécurité. Les mots de passes sont d'ailleurs hash\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      Pour l'implémentation je me suis aidé de mes cours, et de la documentation.\n" +
+                    "\n" +
+                    "      <img src=\"public/user.svg\" alt=\"\">\n" +
+                    "      <img src=\"public/checkuser.svg\" alt=\"\">\n" +
+                    "\n" +
+                    "      <h2> Comment ça fonctionne ? </h2>\n" +
+                    "\n" +
+                    "      L'utilisateur se connecte, côté backend je vérifie le login (en vérifiant que l'user existe) et attribut un jeton à la session, une fois log, il peut accéder à la partie permettant de visualiser les données.\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      Sur ce site il n'y a pas d'intégration de la partie pour s'enregistrer dans la base de données. Les utilisateurs sont pré-identifiés et ont donc un login/mot de passe qui leurs sont attribué. Je rajouterai si il le faut une interface pour renseigner un utilisateur, mais interface uniquement accessible avec une authentification\n" +
+                    "\n" +
+                    "      <img src=\"public/login_exemple.gif\" alt=\"\">\n" +
+                    "      Installation d'une garde (AuthGuard) pour éviter de se rendre sur des URL sous certaines conditions :\n" +
+                    "      <img src=\"public/guard.svg\" alt=\"\">\n" +
+                    "\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      Cela permet de restreindre l'accès à certaines pages en vérifiant par exemple si l'utilisateur est connecté ou si il a bien sélectionné des éléments avant de se rendre sur une page\n" +
+                    "      Cela me permet de sécuriser l'accès côté Front et Back car sans authentification les requêtes INSERT UPDATE, DELETE ne sont pas réalisable"
+            }
+        },
+        "Administrer des systèmes informatiques communicants complexes": {
+            "AC1": {
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 1 :" +
+                    " Concevoir et développer des applications communicantes </span>",
+                content: "<h2>Conception des Applications Communicantes</h2>\n" +
+                    "      <h3>Architecture des Applications</h3>\n" +
+                    "      J'ai créé une API RESTful avec des requêtes http GET, PUT, POST, DELETE. Mon backend est fait avec Sequelize comme\n" +
+                    "      ORM qui communique directement avec ma base de données en PostgreSQL. J'ai plusieurs endpoint.\n" +
+                    "      <img alt=\"\" src=\"public/endpoints.png\">\n" +
+                    "\n" +
+                    "      J'ai pu apprendre à utiliser Swagger pour documenter mon API (on l'avait déjà vu en cours).\n" +
+                    "\n" +
+                    "      J'ai toutes mes routes dans un fichier `routes.js` et avec des requêtes http du côté frontend je récupère les\n" +
+                    "      données :\n" +
+                    "      <img alt=\"\" src=\"public/get_ligne.svg\">\n" +
+                    "      Donc j'ai :\n" +
+                    "      <ul>\n" +
+                    "        <li>Ma base de donnée</li>\n" +
+                    "        <li>Mon ORM sequelize pour faire la glue avec la base de donnée et mon application web</li>\n" +
+                    "      </ul>\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      Ma base de donnée était de base alimentée via des script python qui allait récupérer les données dans des fichiers\n" +
+                    "      Excel, mais j'ai arrêté cela et décider de directement formater les données dans les Excel pour les importer. Je\n" +
+                    "      ne m'en sortais pas, car les données étaient dispersées dans plusieurs fichiers, étaient fausses pour certaines et\n" +
+                    "      surtout, il n'y avait pas de lien écrit entre les éléments.\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      J'ai dû faire des comparaisons entre les données pour pouvoir les liés entres elles et ajouter les clés\n" +
+                    "      étrangères.\n" +
+                    "\n" +
+                    "      <h2>Analyse</h2>\n" +
+                    "      Comment je procède :\n" +
+                    "      Avant d'écrire mes routes et mes fonctions avec Sequelize pour l'API, j'écris mes requêtes SQL séparément pour les\n" +
+                    "      tester, vérifier que j'ai les bonnes données qui me sont retournées, après ça :\n" +
+                    "\n" +
+                    "      - Si la table sql n'existe pas en Sequelize, je la crée\n" +
+                    "      <img alt=\"\" src=\"public/table.svg\">\n" +
+                    "      Une fois le model crée (table) je la référence dans mon fichier regroupant les tables, je peux ensuite réaliser\n" +
+                    "      des requêtes que je regroupe dans le dossier controllers exemple de requête basique\n" +
+                    "      <img alt=\"\" src=\"public/dash.svg\">\n" +
+                    "      Après cela, je référence dans mes routes, afin que cela s'affiche avec swagger et que je puisse tester ma requête.\n" +
+                    "      Le serveur tourne en fond donc je peux récupérer les informations aux routes qui m'intéressent depuis la partie\n" +
+                    "      front-end, je récupère les données et les stock.\n" +
+                    "      <img alt=\"\" src=\"public/get_ligne.svg\">\n" +
+                    "      Pour le développement de l'API de manière générale, j'ai appliqué ce que je savais faire et ce que j'ai vu en\n" +
+                    "      cours, je n'ai pas eu de problème en particulier pour la création de l'API"
+            },
+            "AC2": {
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 2 :" +
+                    " Utiliser des serveurs et des services réseaux virtualisés </span>",
+                content: "Actuellement, la gestion de l'hébergement du site n'est pas de mon ressort, mais à l'avenir, je prévois de prendre\n" +
+                    "      en charge cet aspect en hébergeant le site via une machine virtuelle en local. Ce choix me permettra d'avoir un\n" +
+                    "      contrôle plus direct sur l'environnement d'hébergement et de mieux comprendre le fonctionnement des serveurs.\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      En envisageant l'utilisation de Docker, j'aspire à optimiser la gestion des conteneurs pour le déploiement et la\n" +
+                    "      gestion du site. Cette approche me permettra d'isoler efficacement les différents composants du site web,\n" +
+                    "      facilitant ainsi le déploiement et assurant une meilleure portabilité entre les environnements. J'ai appris de mon\n" +
+                    "      côté à utiliser Docker pour notamment conteneuriser ma documentation\n" +
+                    "\n" +
+                    "      <pre>\n" +
+                    "        FROM node:18-alpine\n" +
+                    "\n" +
+                    "        WORKDIR /app\n" +
+                    "\n" +
+                    "        COPY package*.json ./\n" +
+                    "\n" +
+                    "        RUN npm install\n" +
+                    "\n" +
+                    "        COPY . .\n" +
+                    "\n" +
+                    "        EXPOSE 3000\n" +
+                    "\n" +
+                    "        CMD [\"npm\", \"run\", \"docs:dev\"]\n" +
+                    "      </pre>\n" +
+                    "      <img alt=\"\" src=\"public/docker_exemple.gif\">\n" +
+                    "      En parallèle, j'ai l'intention de mettre en place une routine de sauvegarde régulière de la base de données. Cette\n" +
+                    "      pratique de sauvegarde périodique garantira la sécurité des données et assurera une certaine résilience en cas de\n" +
+                    "      problèmes techniques ou de perte accidentelle de données."
+            },
+            "AC3": {
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>AC 3 :" +
+                    " Sécuriser les services et données d'un système </span>",
+                content: "<h2> Sécurisation des Données </h2>\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      Je veille à la sécurité des données et leurs accès, pas n'importe qui peut accéder à la base de données, il y' a\n" +
+                    "      des rôles. Cela permet de protéger le système à d'éventuelles modification non voulues.\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      Actuellement, la base de donnée possède des colonnes qui sont référencées par ID qui est juste un chiffre/nombre\n" +
+                    "      auto-incrémenté, ce qui serait bien je penses serait de changer ces id pour les remplacer par des uuid pour\n" +
+                    "      améliorer la sécurité des données et éviter de pouvoir rechercher simplement via id"
+            }
+        },
+        "Gérer les données de l'information"                           : {
+            "AC1": {
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'> Optimiser une" +
+                    " base de données, interagir avec une application et mettre en œuvre la sécurité </span> <span" +
+                    " style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'> AC 1 : Optimiser les" +
+                    " modèles" +
+                    " de données de l’entreprise </span>",
+                content: "Dans mon processus, je commence par établir un modèle conceptuel de données (MCD) pour établir clairement les\n" +
+                    "      relations entre les différents éléments. Actuellement, la taille de ma base de données reste modeste <span\n" +
+                    "        style=\"font-weight: bold\"\n" +
+                    "    > 31 008\n" +
+                    "      avec\n" +
+                    "      cette query</span>\n" +
+                    "      <pre>\n" +
+                    "        SELECT sum(reltuples)\n" +
+                    "        FROM pg_class\n" +
+                    "        WHERE relkind='r'\n" +
+                    "        AND relname NOT LIKE 'pg_%';\n" +
+                    "      </pre>\n" +
+                    "\n" +
+                    "      Pour gérer efficacement cette quantité de données, j'utilise PostgreSQL, ce qui me permet de travailler sur des\n" +
+                    "      requêtes optimisées.\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      Dans le développement de mes requêtes, j'adopte une approche réfléchie pour garantir leur efficacité. Je veille à\n" +
+                    "      éviter l'accumulation de jointures excessives en optant par exemple pour des sous-requêtes, me permettant ainsi\n" +
+                    "      d'optimiser les performances et la lisibilité du code. À ce stade, je n'ai pas de problèmes majeurs avec la\n" +
+                    "      structure de ma base de données.\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      Cependant, ma vigilance se porte davantage sur le côté du site web lui-même. Je dois veiller attentivement à la\n" +
+                    "      quantité et à l'efficacité des requêtes que j'envoie au serveur. L'optimisation du côté client devient donc une\n" +
+                    "      priorité pour éviter de surcharger inutilement le serveur avec un grand nombre de requêtes.\n" +
+                    "      <h2>Normalisation</h2>\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      Pourquoi normaliser les données ? Pour éviter les redondances assurer une intégrité des données et aussi éviter\n" +
+                    "      d'avoir des problèmes lié à l'insertion, la suppression et la modification.\n" +
+                    "      <br>\n" +
+                    "      Avec mes cours de première année et actuellement en deuxième année, on a appris à bien construire une base de\n" +
+                    "      données en respectant un certain nombre de règles, c'est ce que j'ai essayé d'appliquer en normalisant ma base de\n" +
+                    "      donnée.\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      J'ai créé une table pour chaque élément important et je n'ai pas lésiné sur les clés étrangères alors c'est bien\n" +
+                    "      pour l'intégrité des données, mais trop de clé étrangères ça peut être chiant pour les requêtes (faut faire plein\n" +
+                    "      de jointures) certes, c'est un compromis. Mais pas si chiant que ça, il y a des techniques notamment des\n" +
+                    "      sous-requêtes.\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      Normaliser la base de données ça m'a aidé à mieux concevoir une BDD, à mieux modéliser en fonction des relations :\n" +
+                    "      <ul>\n" +
+                    "        <li> One to One</li>\n" +
+                    "        <li> One to Many</li>\n" +
+                    "        <li> Many to Many</li>\n" +
+                    "      </ul>\n" +
+                    "      <img alt=\"\" src=\"public/association.svg\">\n" +
+                    "      <div style=\"display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;\">\n" +
+                    "        <img alt=\"\" src=\"public/Amphenol_Test.png\">\n" +
+                    "        <img alt=\"\" src=\"public/exemple_method_python.png.1.png\">\n" +
+                    "        <img alt=\"\" src=\"public/mcd_amphenol.jpg\">\n" +
+                    "      </div>\n" +
+                    "      <img alt=\"\" src=\"public/dernier_mcd.png\">"
+            },
+            "AC2": {
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'> AC 2 : Assurer la" +
+                    " confidentialité des données (intégrité et sécurité) </span>",
+                content: "Je maintiens l'intégrité des données comme dis précédemment en réalisant une normalisation des données\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      Les tables sont bien segmentés, il n'y a pas de doublons, il y a utilisation de clés étrangère pour joindre les\n" +
+                    "      tables, tout cela permet l'intégrité des données\n" +
+                    "      <img alt=\"\" src=\"public/table_produit.png\">\n" +
+                    "      Pour la sécurité, comme dit précédemment il y a une authentification JWT côté front, pour pouvoir manipuler la\n" +
+                    "      bdd. Les insertions, suppression et modifications se font via des transactions pour veiller à l'intégrité et\n" +
+                    "      éviter qu'il y est des problèmes\n" +
+                    "      <img alt=\"\" src=\"public/deleteligne.svg\">"
+            },
+            "AC3": {
+                title  : "AC 3 : Organiser la restitution de données à travers la programmation et la visualisation",
+                content: "Actuellement, j'utilise un script Python avec Pandas pour créer ma base de données à partir de fichiers Excel. Je\n" +
+                    "      prévois d'établir une routine de sauvegarde pour assurer la sécurité des données à l'avenir.\n" +
+                    "      <span style=\"font-weight: bold\">Exemple : (Méthode obsolète) </span>\n" +
+                    "      <img alt=\"\" src=\"public/updateid.svg\">\n" +
+                    "      En récupérant mes données via l'API je les visualisent notamment avec un CRUD (Create, Read, Update, Delete) dans\n" +
+                    "      un onglet spécifique au sein de mon application ça permettra aux personnes ayant accés au CRUD (via les rôles)\n" +
+                    "      d'intéragir avec la base de donnée\n" +
+                    "      <img src=\"public/crud_exemple.gif\" alt=\"\">\n" +
+                    "      J'ai pu apprendre à utiliser python avec Excel en utilisant des dataframe"
+            },
+            "AC4": {
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'> AC 4 :" +
+                    " Manipuler des données hétérogènes </span>",
+                content: "      <h2>Utilisation de différents formats de données</h2>\n" +
+                    "      Je travaille avec ces types de données\n" +
+                    "      <ul>\n" +
+                    "        <li>CSV</li>\n" +
+                    "        <li>Dataframe</li>\n" +
+                    "        <li>JSON</li>\n" +
+                    "        <li>SQL</li>\n" +
+                    "      </ul>\n" +
+                    "\n" +
+                    "      Toutes mes données proviennent de fichiers Excel que je convertis d'abord en dataframes, parfois en passant par le\n" +
+                    "      format CSV. Ces fichiers contiennent une diversité de types de données, comprenant des chaînes de caractères, des\n" +
+                    "      nombres entiers, des décimaux. Par exemple, je manipule des données telles que des vitesses en mètres ou des\n" +
+                    "      mesures de tension et d'intensité électrique. Je manipule des données sous formats csv, excel, json, sql,\n" +
+                    "      dataframep\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      Je récupère mes données au travers de fichiers Excel que j'insère dans ma base de données à l'aide de dataframes,\n" +
+                    "      quand je fais mes requêtes à la base de donnée via Sequelize je reçois un Json que je peux aussi manipuler pour\n" +
+                    "      l'afficher comme je le souhaite dans mon application. Mes résultats Json peuvent contenir des objets avec des\n" +
+                    "      tableaux.\n" +
+                    "      <span style=\"font-weight: bold\">Exemple :</span>\n" +
+                    "      <img alt=\"\" src=\"public/jason.svg\">\n" +
+                    "      <img alt=\"\" src=\"public/data_sql_exemple.png\">"
+            }
+        },
+        "Conduire un projet"                                           : {
+            "AC1": {
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>" +
+                    " Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des" +
+                    " utilisateurs <br> AC 1 : Identifier les processus présents dans une organisation en vue" +
+                    " d’améliorer les systèmes d’information </span> ",
+                content: "Je travaille avec le client pour cerner les besoins spécifiques de l'application en cours de développement.\n" +
+                    "      Actuellement, les processus opérationnels sont manuels, consignés sur papier. Mon objectif consiste à transformer\n" +
+                    "      ces processus en solutions informatiques, rendant ainsi leur utilisation aussi simple et intuitive que possible.\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      Mon processus démarre par une analyse des méthodes actuelles consignées sur papier. J'analyse chaque étape pour\n" +
+                    "      comprendre comment je peux les transposer de manière informatique, tout en veillant à conserver leur simplicité.\n" +
+                    "      Cette phase initiale est importante pour garantir que la transition vers des systèmes informatiques se fasse de\n" +
+                    "      manière fluide et ergonomique pour les utilisateurs.\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      La communication régulière avec le client est essentielle. Cela me permet de valider mes idées, de m'assurer que\n" +
+                    "      les améliorations envisagées correspondent bien aux besoins métiers et qu'elles simplifient réellement les\n" +
+                    "      processus existants.\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      Quand je suis arrivé, il y avait un fichier Excel créé par mon tuteur pour faire ce que je fais actuellement, mais\n" +
+                    "      il était pas finalisé et surtout pas pratique ni vraiment ergonomique. En voyant cela en plus des fiches format\n" +
+                    "      papier, cela m'a permis de penser à un système pour améliorer ce processus. J'ai d'abord réaliser des maquettes\n" +
+                    "      pour le site, conceptualiser la base de donnée, etc. En bref, j'ai essayé de prendre en compte le plus de\n" +
+                    "      paramètre possible pour avoir une vision d'ensemble suffisante afin d'améliorer l'existant"
+            },
+            "AC2": {
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'> AC 2 :" +
+                    " Formaliser les besoins du client et de l’utilisateur </span>",
+                content: "      Je consolide les tâches et les objectifs discutés lors de nos réunions hebdomadaires ainsi que des échanges avec\n" +
+                    "      mon tuteur. Une fois ces informations collectées, je les organise sur Jira en tenant compte à la fois de leur\n" +
+                    "      importance (Changement d'élément dans l'interface, création de page, etc.) et de leur faisabilité.\n" +
+                    "      <br>\n" +
+                    "      Jira me sert de board à todo comme Trello, que j'alimente régulièrement pour des tâches plus ou moins variées\n" +
+                    "      réparties dans des catégories (interface, refactoring...)\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      Cela me permet d'avoir une vision de l'état d'avancement du projet (même si il y a souvent des tâches qui se\n" +
+                    "      rajoutent), ce qui permet donc dans un sens, de formaliser les besoins du client en réalisant étapes par étapes\n" +
+                    "      des tâches amenant à un jalon important. Par exemple :\n" +
+                    "\n" +
+                    "      <ul>\n" +
+                    "        <li>Réaliser un affichage pour la partie manipulation de données.</li>\n" +
+                    "        <li>Créer les requêtes permettant d'insérer, modifier et supprimer.</li>\n" +
+                    "        <li>Corriger tel problème.</li>\n" +
+                    "        <li>Améliorer l'interface.</li>\n" +
+                    "      </ul>\n" +
+                    "      <br>\n" +
+                    "      Tout cela amène à : la possibilité de modifier les données via requêtes API (CRUD).\n" +
+                    "      <img src=\"public/jira_tasks_2.png\" alt=\"\">"
+            },
+            "AC3": {
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'> AC 3 :" +
+                    " Identifier les critères de faisabilité d’un projet informatique </span>",
+                content: "      Le projet que j'entreprends seul me paraît réalisable relativement à mes compétences de développeur Junior. J'ai\n" +
+                    "      suffisamment de temps pour m'impliquer dans le projet. Cependant, cela implique un apprentissage continu.\n" +
+                    "      <br>\n" +
+                    "      En analysant les contours du projet, je ne perçois pas de risque majeur susceptible d'avoir un impact significatif\n" +
+                    "      sur l'ensemble du projet. Étant seul, je suis conscient des défis, mais je suis confiant dans ma capacité à les\n" +
+                    "      relever et à les résoudre au fur et à mesure qu'ils se présentent.\n" +
+                    "      <br>\n" +
+                    "      Lorsque j'ai une tâche/fonctionnalité à réaliser/implémenter, je me demande combien de temps cela va me prendre.\n" +
+                    "      Au maximum, cela me prend 3 jours :\n" +
+                    "      <ul>\n" +
+                    "        <li>Trouver l'idée</li>\n" +
+                    "        <li>L'implémenter</li>\n" +
+                    "        <li>Débugger</li>\n" +
+                    "      </ul>\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      De base, il n'y avait rien, pas de base de données, pas de sites, rien, enfin les données étaient dispatchées dans\n" +
+                    "      des fichiers Excel au quatre coins du monde.\n" +
+                    "\n" +
+                    "      Le plus long à réaliser n'est pas le site en soit mais bien la base de donnée.\n" +
+                    "\n" +
+                    "      Il faut avoir une bonne \"base\" un bon modèle/schéma (MCD) avant de pouvoir insérer les données, déjà ça, c'est\n" +
+                    "      long. C'est long car il faut réfléchir à :\n" +
+                    "      <ul>\n" +
+                    "        <li>Quoi prendre ?</li>\n" +
+                    "        <li>Les relations entre les éléments</li>\n" +
+                    "      </ul>\n" +
+                    "      C'est bien beau d'avoir le MCD, mais maintenant, il faut les récupérer les données, et comme je l'ai déjà dit,\n" +
+                    "      elles sont dans des fichiers Excel pas toujours intègres, et ce n'est pas pratique au niveau informatique\n" +
+                    "      d'extraire ces données.\n" +
+                    "      <p>&nbsp;</p>\n" +
+                    "      Pour ce qui est du site, j'arrive à bien estimer la conception, grâce aux nombreux projets que l'on a pu avoir en\n" +
+                    "      cours, ça me permet de jauger telle ou telle fonctionnalité, si elle \"difficile\" a implémentée ou autre. J'arrive\n" +
+                    "      mieux à jauger ma capacité en tant que développeur à résoudre des problèmes."
+            },
+            "AC4": {
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'> AC 4 :" +
+                    " Définir et mettre en œuvre une démarche de suivi de projet </span>",
+                content: "Je m'appuie sur GitHub et Jira pour gérer mon projet. Je démarre par les tâches les plus complexes, comme la\n" +
+                    "      résolution de bugs ou l'intégration des fonctionnalités essentielles. Je fais des commits fréquents sur GitHub\n" +
+                    "      pour suivre les modifications. Les fonctionnalités moins prioritaires sont intégrées après.\n" +
+                    "      <br>\n" +
+                    "      On peut retrouver le \"peak\" du bitcoin en 2017 dans le graphe ci-dessous, en avril et en mai, <span\n" +
+                    "        style=\"font-weight: bold\">pourquoi ?</span>\n" +
+                    "      <br><br>\n" +
+                    "      <span style=\"font-weight: bold\">Contexte :</span>\n" +
+                    "      Au début, je récupérai les données avec des script en python, je me suis ensuite mis vers le développement du site\n" +
+                    "      (j'alternai entre les deux) le problème, c'est que je voyais que l'extraction de données était fastidieuse, j'ai\n" +
+                    "      donc demandé de l'aide à un collègue pour l'extraction de données, en plus de cela, il pouvait justement vérifier\n" +
+                    "      s'il y avait des erreurs.\n" +
+                    "      <br><br>\n" +
+                    "      Pendant qu'il travaillait sur l'extraction, en parallèle, je codais la partie backend + frontend du site\n" +
+                    "      (application web). Donc n'ayant pas les données, ou parfois le même schéma de donnée, j'ai \"prédit\" le modèle que\n" +
+                    "      j'allais avoir et \"inventé\" le schéma de donnée afin d'avoir un prototype pour que je puisse avancer.\n" +
+                    "      <br><br>\n" +
+                    "\n" +
+                    "      Finalement, quand j'ai reçu les données, là, à ce moment, je pouvais remodeler mon code afin d’accueillir les\n" +
+                    "      vraies données, <span style=\"font-weight: bold\"> j'ai donc fait beaucoup de refactoring d'où les piques en Avril et en Mai.</span>\n" +
+                    "      <div style=\"display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;\">\n" +
+                    "        <img src=\"public/github_add_del.png\" alt=\"\">\n" +
+                    "        <img src=\"public/commhisto.png\" alt=\"\">\n" +
+                    "      </div>"
+            }
+        },
+        "Collaborer au sein d'une équipe informatique"                 : {
+            "AC3": {
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'> Situer son rôle" +
+                    " et ses missions au sein d’une équipe informatique <br> AC 3 : Mobiliser les compétences interpersonnelles pour intégrer une équipe\n" +
+                    "informatique </span>",
+                content: "Je ne suis pas dans une équipe informatique, mais à l'avenir je devrai mobiliser les compétences du service\n" +
+                    "      informatique de l'entreprise pour intégrer mon projet, le mettre en ligne, assurer la sécurité du site, etc.\n" +
+                    "      <br><br>\n" +
+                    "\n" +
+                    "      Du coup, je vais parler des projets réalisés en cours.\n" +
+                    "      <br>\n" +
+                    "      Projet Web en VueJS sur la création d'un site reprenant une api mongodb. J'ai pu travailler en équipe, et diviser\n" +
+                    "      les tâches sur le projet. Chacun réalisait une partie, l'on mettait nos travaux en communs avec Git sur Github\n" +
+                    "      afin d’éventuellement corriger des problèmes ou améliorer certains bouts de code.\n" +
+                    "      <br><br>\n" +
+                    "      L'on travaillait chacun de notre côté sur des fonctionnalités différentes pour aboutir vers un tout."
+            },
+            "AC4": {
+                title: "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'> AC 4 : Rendre" +
+                    " compte de son activité professionnelle </span>",
+                content: "Le contact direct avec le \"client\" me permet de rendre compte de mon activité en permanence en expliquant mon avancée lors de réunions hebdomadaires pour faire le point sur la semaine ou tous les jours avec mon collègue pour discuter des fonctionnalités, de la base de donnée, etc.\n" +
+                    " <p>&nbsp;</p>" +
+                    "Je rends aussi compte de mon activité d'une certaine manière via Github, ou encore la documentation que j'écris en parallèle."
+            }
         }
     },
     "3ème année": {
         "Réaliser un développement d'application": {
             "AC1": {
-                title: "",
+                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>Optimiser" +
+                    " une base de données, interagir avec une application et mettre en œuvre la sécurité </span>" +
+                    "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'> AC 1 :" +
+                    " Optimiser les modèles de données de l’entreprise </span>",
                 content: ""
             }
         }

@@ -21,11 +21,11 @@ import {computed} from 'vue';
 
 const props = defineProps({
   annee: {
-    type: String,
+    type   : String,
     default: "2ème année"
   },
-  ac: {
-    type: String,
+  ac   : {
+    type   : String,
     default: "Réaliser un développement d'application"
   }
 })
@@ -33,12 +33,12 @@ const props = defineProps({
 const dataExists = computed(() => {return jason[props.annee] && jason[props.annee][props.ac]});
 
 const compData = computed(() => {
-  if (dataExists.value) return jason[props.annee][props.ac];
+  if(dataExists.value) return jason[props.annee][props.ac];
   return {};
 });
 
 const acNumbers = computed(() => {
-  if (!dataExists.value) return [];
+  if(!dataExists.value) return [];
   return Object.keys(compData.value)
       .filter(key => key.startsWith('AC'))
       .map(key => parseInt(key.replace('AC', '')))
@@ -52,5 +52,19 @@ img {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+pre {
+  border-left: 3px solid #f36d33;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
 }
 </style>

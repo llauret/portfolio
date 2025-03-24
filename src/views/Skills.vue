@@ -18,7 +18,7 @@
             :class="{ active: selectedSkill === index }"
             :title="skill.title"
             class="skill-card"
-            @mousedown="selectedSkill = index"
+            @mouseenter="selectedSkill = index"
         >
           <div
               :class="{ active: selectedSkill === index }"
@@ -51,7 +51,7 @@ const skills =
       {title: "Réaliser un développement d'application", color: "#47443b"},
       {title: "Optimiser des applications", color: "#47443b"},
       {title: "Administrer des systèmes informatiques communicants complexes", color: "#47443b"},
-      {title: "Gérer des données de l'information", color: "#47443b"},
+      {title: "Gérer les données de l'information", color: "#47443b"},
       {title: "Conduire un projet", color: "#47443b"},
       {title: "Collaborer au sein d'une équipe informatique", color: "#47443b"}
     ];
@@ -123,7 +123,7 @@ function selectYear(index) {
 .main-content {
   flex: 1;
   overflow-y: auto;
-  height: 75vh;
+  height: 80vh;
   border: 1px solid #454138;
   padding: 1rem;
 }
@@ -135,7 +135,7 @@ function selectYear(index) {
   gap: 2rem;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 .selection-annee > div {
