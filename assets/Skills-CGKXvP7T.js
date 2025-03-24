@@ -1,4 +1,4 @@
-import{_ as C,o as t,c as r,e as S,b as J,t as u,n as k,a,F as b,j as v,k as L,w as _,r as x,f as h,g as E,l as P,m as M,i as A,p as q}from"./index-Bqd_7JGf.js";const T={__name:"ue-card",props:{title:String,color:String},setup(o){return(e,n)=>(t(),r("div",{style:k({backgroundColor:o.color}),class:"card"},[S(e.$slots,"default",{},void 0),J(" "+u(o.title),1)],4))}},D=C(T,[["__scopeId","data-v-a75b93af"]]),I={class:"title"},z={class:"ac"},O={class:"subTitle"},R={__name:"skill-detail",props:{title:String,ac:String,subTitle:String},setup(o){return(e,n)=>(t(),r(b,null,[a("div",I,u(o.title),1),a("div",z,u(o.ac),1),a("div",O,u(o.subTitle),1),S(e.$slots,"description",{},void 0)],64))}},N=C(R,[["__scopeId","data-v-57255efb"]]),j={"1ère année":{"Réaliser un développement d'application":{AC1:{title:"",content:""}}},"2ème année":{"Réaliser un développement d'application":{AC1:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'>AC 1 : Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences </span>",content:`<div class="description">
+import{_ as C,o,c as r,e as S,b as J,t as u,n as k,a,F as b,j as v,k as L,w as _,r as x,f as h,g as E,l as P,m as M,i as A,p as q}from"./index-Ddyo_ljq.js";const T={__name:"ue-card",props:{title:String,color:String},setup(t){return(e,n)=>(o(),r("div",{style:k({backgroundColor:t.color}),class:"card"},[S(e.$slots,"default",{},void 0),J(" "+u(t.title),1)],4))}},D=C(T,[["__scopeId","data-v-a75b93af"]]),I={class:"title"},z={class:"ac"},O={class:"subTitle"},R={__name:"skill-detail",props:{title:String,ac:String,subTitle:String},setup(t){return(e,n)=>(o(),r(b,null,[a("div",I,u(t.title),1),a("div",z,u(t.ac),1),a("div",O,u(t.subTitle),1),S(e.$slots,"description",{},void 0)],64))}},N=C(R,[["__scopeId","data-v-57255efb"]]),j={"1ère année":{"Réaliser un développement d'application":{AC1:{title:"",content:""}}},"2ème année":{"Réaliser un développement d'application":{AC1:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'>AC 1 : Élaborer et implémenter les spécifications fonctionnelles et non fonctionnelles à partir des exigences </span>",content:`<div class="description">
         <h2> Comprendre les exigences</h2>
         Analyse des exigences :
 
@@ -58,7 +58,7 @@ import{_ as C,o as t,c as r,e as S,b as J,t as u,n as k,a,F as b,j as v,k as L,w
         Bien prendre en compte les exigences, c’est vraiment important pour ne pas réaliser une solution en désaccord
         avec l’envie des clients et éviter cette situation :
         <br>
-        <img alt="" src="public/development.jpg">
+        <img alt="" src="/portfolio/development.jpg">
         <hr>
         <h2>Conception de l'application</h2>
         <h3>Spécifications fonctionnelles</h3>
@@ -83,7 +83,7 @@ import{_ as C,o as t,c as r,e as S,b as J,t as u,n as k,a,F as b,j as v,k as L,w
         en première année et actuellement en deuxième année pour tout ce qui concerne les bases de données et la
         création d’interface.
       </div>
-      <img alt="" src="public/clientapi.png">
+      <img alt="" src="/portfolio/clientapi.png">
       <h5>Exemple d’implémentation :</h5>
       L’ajout d’un bouton d’édition
       <ul>
@@ -100,7 +100,7 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
 <p>&nbsp;</p>
         Quand je clique sur ce bouton, j'entre en mode édition, je change mes composants et affiche ceux qui m'intéresse OK ça marche, mais maintenant comment je sauvegarde chaque valeur modifiée, afin que les données soient persistantes ? (Qu’elles restent lorsque je change de page ou que je "refresh" la page)
       </span>
-      <img alt="" src="public/editmode.png">
+      <img alt="" src="/portfolio/editmode.png">
 
       <h3> Spécification non fonctionnelles : </h3>
 
@@ -125,7 +125,7 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
         </ul>
       </div>
 
-      <img alt="" src="public/schema_view_component.png">
+      <img alt="" src="/portfolio/schema_view_component.png">
       <h2>Technologies</h2>
       <div>
         Pour développer tout cela, il faut choisir des technologies, comme vu à la page d’introduction, j’ai choisi :
@@ -169,7 +169,7 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
       </div>
 
 
-      <img alt="" src="public/interface_degraissage1_edit.png.1.png">
+      <img alt="" src="/portfolio/interface_degraissage1_edit.png.1.png">
 
       <div>
         L’affichage se base sur une requête sql avec sequelize où je récupère les attributs d’un produit, je boucle dans
@@ -183,7 +183,7 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
         C’est pour pouvoir afficher la même interface, mais avec les valeurs relevées quand j’accéderai aux fiches dans
         ma partie historique.
       </div>
-      <img alt="" src="public/Screen%20Shot%202024-06-13%20at%2014.08.02-fullpage.png">
+      <img alt="" src="/portfolio/Screen%20Shot%202024-06-13%20at%2014.08.02-fullpage.png">
 
       Le problème qui se pose, c’est comment stocker cela dans ma base de données ? Ce sont les mêmes tables interrogées
       mais avec une seule valeur qui change à fois ce qui me ferait créer des éléments à chaque nouvelle valeur avec
@@ -212,7 +212,7 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
       Exemple, rajouter une bulle de commentaires sur le relevé pour donner plus d’informations sur d’éventuels
       problèmes.
 
-      <img alt="" src="public/ajout_commentaire.gif.1.gif">
+      <img alt="" src="/portfolio/ajout_commentaire.gif.1.gif">
 
       Pourquoi je fais cela ?
 
@@ -236,7 +236,7 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
       pgAdmin je peux voir les requêtes I/O et avoir des graphiques, les différentes connexions, etc. Cela me permet de
       monitorer la base de données.
 
-      <img alt="" src="public/schéma_data.png">
+      <img alt="" src="/portfolio/schéma_data.png">
 
       <h3>Amélioration continue</h3>
 
@@ -325,29 +325,29 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
       de mains et faire en sorte que le site soit simple d'utilisation.
       <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
         <figure>
-          <img alt="" src="public/interface_tuile.png">
+          <img alt="" src="/portfolio/interface_tuile.png">
           <figcaption>Interface Tuile</figcaption>
         </figure>
         <figure>
-          <img alt="" src="public/interface_degraissage1.png">
+          <img alt="" src="/portfolio/interface_degraissage1.png">
           <figcaption>Interface Dégraissage 1</figcaption>
         </figure>
         <figure>
-          <img alt="" src="public/interface_degraissage1_edit.png">
+          <img alt="" src="/portfolio/interface_degraissage1_edit.png">
           <figcaption>Interface Dégraissage 1 Edit</figcaption>
         </figure>
       </div>
       <figure>
-        <img alt="" src="public/interface_prototype.png">
+        <img alt="" src="/portfolio/interface_prototype.png">
         <figcaption>Interface Prototype</figcaption>
       </figure>
       <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
         <figure>
-          <img alt="" src="public/interface_prototype2.png">
+          <img alt="" src="/portfolio/interface_prototype2.png">
           <figcaption>Interface Prototype 2</figcaption>
         </figure>
         <figure>
-          <img alt="" src="public/interface_prototype3.png">
+          <img alt="" src="/portfolio/interface_prototype3.png">
           <figcaption>Interface Prototype 3</figcaption>
         </figure>
       </div>`},AC3:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'>AC 3 : Adopter de bonnes pratiques de conception et de programmation </span>",content:`Pour le développement de l'application web, j'ai adopté une approche rigoureuse en segmentant bien mon code pour
@@ -492,7 +492,7 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
           style="color:#89ddff;">        </span><span style="color:#eeffff;">tableName</span><span
           style="color:#89ddff;">: </span><span style="color:#c3e88d;">'ampere'</span><span style="color:#89ddff;">,<br></span><span
           style="color:#89ddff;">        </span><span style="color:#eeffff;">schema</span><span
-          style="color:#89ddff;">: </span><span style="color:#c3e88d;">'public'</span><span style="color:#89ddff;">,<br></span><span
+          style="color:#89ddff;">: </span><span style="color:#c3e88d;">''</span><span style="color:#89ddff;">,<br></span><span
           style="color:#89ddff;">        </span><span style="color:#eeffff;">timestamps</span><span
           style="color:#89ddff;">: </span><span style="color:#c792ea;font-style:italic;">false</span><span
           style="color:#89ddff;">,<br></span><span style="color:#89ddff;">        </span><span style="color:#eeffff;">indexes</span><span
@@ -632,7 +632,7 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
 
       Globalement j'ai appris à mettre en œuvre ce que j'ai pu voir en cours
 
-      <img alt="" src="public/exemple_doc.png">`},AC4:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'>AC 4 : Vérifier et valider la qualité de l'application par les tests </span>",content:`En ce qui concerne les tests, j'utilise ViteTest qui est une librairie pour les projets déployer avec Vite avec
+      <img alt="" src="/portfolio/exemple_doc.png">`},AC4:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'>AC 4 : Vérifier et valider la qualité de l'application par les tests </span>",content:`En ce qui concerne les tests, j'utilise ViteTest qui est une librairie pour les projets déployer avec Vite avec
       ViteTest je peux faire des tests Unitaire sur des méthodes, des tests sur des composants et des vues
 
       Comment je structure mes tests ? Le projet à la création possède un dossier \`__tests__\` j'ai alors recrée
@@ -917,7 +917,7 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
 
       Je charge les données dans un dataframe et à partir de là, je le manipule.
       <p>&nbsp;</p>
-      <img src="public/racine.svg" alt="">
+      <img src="/portfolio/racine.svg" alt="">
       Les données récupérées sont du coup sous dataframe, puis insérer en SQL
       puis le récupère les données en format JSON lors de requêtes.<br>Récupérer les données avec python dans des Excel
       a été un peu fastidieux, pour plusieurs raisons :
@@ -930,12 +930,12 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
       UTF-8. Certains fichiers, justement, ne pouvaient pas être ouverts via python car top vieux (1995). Pour la partie SQL et JSON, ce n'est pas compliqué à manipuler, je n'ai pas de requêtes complexes.
       <br>Voici ma requête la plus longue et encore, elle est "optimisable".<br><br>
 
-      <img src="public/get_caract.svg" alt="">`},AC2:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'>AC 2 : Utiliser des technique algorithmiques adaptées au problème</span>",content:"J'utilise pas de tables de hachages, de graphes ou quoi que ce soit"},AC3:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'>AC 3 : Comprendre les enjeux et moyens de sécurisation des données et du code </span>",content:`La sécurité des données est importante, pour cela j'ai dû mettre en place un système d'authentification pour pouvoir accéder à la manipulation des données partie CRUD (Create Read Update Delete) avec JWT. J'aurais pu simplement faire une requête à la base de données pour récupérer et comparer les mots de passes, mais avec JWT ça permet d'avoir un jeton réutilisable, et avoir une meilleure sécurité. Les mots de passes sont d'ailleurs hash
+      <img src="/portfolio/get_caract.svg" alt="">`},AC2:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'>AC 2 : Utiliser des technique algorithmiques adaptées au problème</span>",content:"J'utilise pas de tables de hachages, de graphes ou quoi que ce soit"},AC3:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'>AC 3 : Comprendre les enjeux et moyens de sécurisation des données et du code </span>",content:`La sécurité des données est importante, pour cela j'ai dû mettre en place un système d'authentification pour pouvoir accéder à la manipulation des données partie CRUD (Create Read Update Delete) avec JWT. J'aurais pu simplement faire une requête à la base de données pour récupérer et comparer les mots de passes, mais avec JWT ça permet d'avoir un jeton réutilisable, et avoir une meilleure sécurité. Les mots de passes sont d'ailleurs hash
       <p>&nbsp;</p>
       Pour l'implémentation je me suis aidé de mes cours, et de la documentation.
 
-      <img src="public/user.svg" alt="">
-      <img src="public/checkuser.svg" alt="">
+      <img src="/portfolio/user.svg" alt="">
+      <img src="/portfolio/checkuser.svg" alt="">
 
       <h2> Comment ça fonctionne ? </h2>
 
@@ -943,9 +943,9 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
       <p>&nbsp;</p>
       Sur ce site il n'y a pas d'intégration de la partie pour s'enregistrer dans la base de données. Les utilisateurs sont pré-identifiés et ont donc un login/mot de passe qui leurs sont attribué. Je rajouterai si il le faut une interface pour renseigner un utilisateur, mais interface uniquement accessible avec une authentification
 
-      <img src="public/login_exemple.gif" alt="">
+      <img src="/portfolio/login_exemple.gif" alt="">
       Installation d'une garde (AuthGuard) pour éviter de se rendre sur des URL sous certaines conditions :
-      <img src="public/guard.svg" alt="">
+      <img src="/portfolio/guard.svg" alt="">
 
       <p>&nbsp;</p>
       Cela permet de restreindre l'accès à certaines pages en vérifiant par exemple si l'utilisateur est connecté ou si il a bien sélectionné des éléments avant de se rendre sur une page
@@ -953,13 +953,13 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
       <h3>Architecture des Applications</h3>
       J'ai créé une API RESTful avec des requêtes http GET, PUT, POST, DELETE. Mon backend est fait avec Sequelize comme
       ORM qui communique directement avec ma base de données en PostgreSQL. J'ai plusieurs endpoint.
-      <img alt="" src="public/endpoints.png">
+      <img alt="" src="/portfolio/endpoints.png">
 
       J'ai pu apprendre à utiliser Swagger pour documenter mon API (on l'avait déjà vu en cours).
 
       J'ai toutes mes routes dans un fichier \`routes.js\` et avec des requêtes http du côté frontend je récupère les
       données :
-      <img alt="" src="public/get_ligne.svg">
+      <img alt="" src="/portfolio/get_ligne.svg">
       Donc j'ai :
       <ul>
         <li>Ma base de donnée</li>
@@ -980,14 +980,14 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
       tester, vérifier que j'ai les bonnes données qui me sont retournées, après ça :
 
       - Si la table sql n'existe pas en Sequelize, je la crée
-      <img alt="" src="public/table.svg">
+      <img alt="" src="/portfolio/table.svg">
       Une fois le model crée (table) je la référence dans mon fichier regroupant les tables, je peux ensuite réaliser
       des requêtes que je regroupe dans le dossier controllers exemple de requête basique
-      <img alt="" src="public/dash.svg">
+      <img alt="" src="/portfolio/dash.svg">
       Après cela, je référence dans mes routes, afin que cela s'affiche avec swagger et que je puisse tester ma requête.
       Le serveur tourne en fond donc je peux récupérer les informations aux routes qui m'intéressent depuis la partie
       front-end, je récupère les données et les stock.
-      <img alt="" src="public/get_ligne.svg">
+      <img alt="" src="/portfolio/get_ligne.svg">
       Pour le développement de l'API de manière générale, j'ai appliqué ce que je savais faire et ce que j'ai vu en
       cours, je n'ai pas eu de problème en particulier pour la création de l'API`},AC2:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'>AC 2 : Utiliser des serveurs et des services réseaux virtualisés </span>",content:`Actuellement, la gestion de l'hébergement du site n'est pas de mon ressort, mais à l'avenir, je prévois de prendre
       en charge cet aspect en hébergeant le site via une machine virtuelle en local. Ce choix me permettra d'avoir un
@@ -1013,7 +1013,7 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
 
         CMD ["npm", "run", "docs:dev"]
       </pre>
-      <img alt="" src="public/docker_exemple.gif">
+      <img alt="" src="/portfolio/docker_exemple.gif">
       En parallèle, j'ai l'intention de mettre en place une routine de sauvegarde régulière de la base de données. Cette
       pratique de sauvegarde périodique garantira la sécurité des données et assurera une certaine résilience en cas de
       problèmes techniques ou de perte accidentelle de données.`},AC3:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'>AC 3 : Sécuriser les services et données d'un système </span>",content:`<h2> Sécurisation des Données </h2>
@@ -1067,28 +1067,28 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
         <li> One to Many</li>
         <li> Many to Many</li>
       </ul>
-      <img alt="" src="public/association.svg">
+      <img alt="" src="/portfolio/association.svg">
       <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
-        <img alt="" src="public/Amphenol_Test.png">
-        <img alt="" src="public/exemple_method_python.png.1.png">
-        <img alt="" src="public/mcd_amphenol.jpg">
+        <img alt="" src="/portfolio/Amphenol_Test.png">
+        <img alt="" src="/portfolio/exemple_method_python.png.1.png">
+        <img alt="" src="/portfolio/mcd_amphenol.jpg">
       </div>
-      <img alt="" src="public/dernier_mcd.png">`},AC2:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'> AC 2 : Assurer la confidentialité des données (intégrité et sécurité) </span>",content:`Je maintiens l'intégrité des données comme dis précédemment en réalisant une normalisation des données
+      <img alt="" src="/portfolio/dernier_mcd.png">`},AC2:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'> AC 2 : Assurer la confidentialité des données (intégrité et sécurité) </span>",content:`Je maintiens l'intégrité des données comme dis précédemment en réalisant une normalisation des données
       <p>&nbsp;</p>
       Les tables sont bien segmentés, il n'y a pas de doublons, il y a utilisation de clés étrangère pour joindre les
       tables, tout cela permet l'intégrité des données
-      <img alt="" src="public/table_produit.png">
+      <img alt="" src="/portfolio/table_produit.png">
       Pour la sécurité, comme dit précédemment il y a une authentification JWT côté front, pour pouvoir manipuler la
       bdd. Les insertions, suppression et modifications se font via des transactions pour veiller à l'intégrité et
       éviter qu'il y est des problèmes
-      <img alt="" src="public/deleteligne.svg">`},AC3:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'>AC 3 : Organiser la restitution de données à travers la programmation et la visualisation </span>",content:`Actuellement, j'utilise un script Python avec Pandas pour créer ma base de données à partir de fichiers Excel. Je
+      <img alt="" src="/portfolio/deleteligne.svg">`},AC3:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'>AC 3 : Organiser la restitution de données à travers la programmation et la visualisation </span>",content:`Actuellement, j'utilise un script Python avec Pandas pour créer ma base de données à partir de fichiers Excel. Je
       prévois d'établir une routine de sauvegarde pour assurer la sécurité des données à l'avenir.
       <span style="font-weight: bold">Exemple : (Méthode obsolète) </span>
-      <img alt="" src="public/updateid.svg">
+      <img alt="" src="/portfolio/updateid.svg">
       En récupérant mes données via l'API je les visualisent notamment avec un CRUD (Create, Read, Update, Delete) dans
       un onglet spécifique au sein de mon application ça permettra aux personnes ayant accés au CRUD (via les rôles)
       d'intéragir avec la base de donnée
-      <img src="public/crud_exemple.gif" alt="">
+      <img src="/portfolio/crud_exemple.gif" alt="">
       J'ai pu apprendre à utiliser python avec Excel en utilisant des dataframe`},AC4:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'> AC 4 : Manipuler des données hétérogènes </span>",content:`      <h2>Utilisation de différents formats de données</h2>
       Je travaille avec ces types de données
       <ul>
@@ -1109,8 +1109,8 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
       l'afficher comme je le souhaite dans mon application. Mes résultats Json peuvent contenir des objets avec des
       tableaux.
       <span style="font-weight: bold">Exemple :</span>
-      <img alt="" src="public/jason.svg">
-      <img alt="" src="public/data_sql_exemple.png">`}},"Conduire un projet":{AC1:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'> Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs <br> AC 1 : Identifier les processus présents dans une organisation en vue d’améliorer les systèmes d’information </span> ",content:`Je travaille avec le client pour cerner les besoins spécifiques de l'application en cours de développement.
+      <img alt="" src="/portfolio/jason.svg">
+      <img alt="" src="/portfolio/data_sql_exemple.png">`}},"Conduire un projet":{AC1:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'> Appliquer une démarche de suivi de projet en fonction des besoins métiers des clients et des utilisateurs <br> AC 1 : Identifier les processus présents dans une organisation en vue d’améliorer les systèmes d’information </span> ",content:`Je travaille avec le client pour cerner les besoins spécifiques de l'application en cours de développement.
       Actuellement, les processus opérationnels sont manuels, consignés sur papier. Mon objectif consiste à transformer
       ces processus en solutions informatiques, rendant ainsi leur utilisation aussi simple et intuitive que possible.
       <p>&nbsp;</p>
@@ -1146,7 +1146,7 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
       </ul>
       <br>
       Tout cela amène à : la possibilité de modifier les données via requêtes API (CRUD).
-      <img src="public/jira_tasks_2.png" alt="">`},AC3:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'> AC 3 : Identifier les critères de faisabilité d’un projet informatique </span>",content:`      Le projet que j'entreprends seul me paraît réalisable relativement à mes compétences de développeur Junior. J'ai
+      <img src="/portfolio/jira_tasks_2.png" alt="">`},AC3:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'> AC 3 : Identifier les critères de faisabilité d’un projet informatique </span>",content:`      Le projet que j'entreprends seul me paraît réalisable relativement à mes compétences de développeur Junior. J'ai
       suffisamment de temps pour m'impliquer dans le projet. Cependant, cela implique un apprentissage continu.
       <br>
       En analysant les contours du projet, je ne perçois pas de risque majeur susceptible d'avoir un impact significatif
@@ -1199,8 +1199,8 @@ Je réfléchis à une approche basique, le bouton va changer la valeur d’un bo
       Finalement, quand j'ai reçu les données, là, à ce moment, je pouvais remodeler mon code afin d’accueillir les
       vraies données, <span style="font-weight: bold"> j'ai donc fait beaucoup de refactoring d'où les piques en Avril et en Mai.</span>
       <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
-        <img src="public/github_add_del.png" alt="">
-        <img src="public/commhisto.png" alt="">
+        <img src="/portfolio/github_add_del.png" alt="">
+        <img src="/portfolio/commhisto.png" alt="">
       </div>`}},"Collaborer au sein d'une équipe informatique":{AC3:{title:`<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'> Situer son rôle et ses missions au sein d’une équipe informatique <br> AC 3 : Mobiliser les compétences interpersonnelles pour intégrer une équipe
 informatique </span>`,content:`Je ne suis pas dans une équipe informatique, mais à l'avenir je devrai mobiliser les compétences du service
       informatique de l'entreprise pour intégrer mon projet, le mettre en ligne, assurer la sécurité du site, etc.
@@ -1213,4 +1213,4 @@ informatique </span>`,content:`Je ne suis pas dans une équipe informatique, mai
       afin d’éventuellement corriger des problèmes ou améliorer certains bouts de code.
       <br><br>
       L'on travaillait chacun de notre côté sur des fonctionnalités différentes pour aboutir vers un tout.`},AC4:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'> AC 4 : Rendre compte de son activité professionnelle </span>",content:`Le contact direct avec le "client" me permet de rendre compte de mon activité en permanence en expliquant mon avancée lors de réunions hebdomadaires pour faire le point sur la semaine ou tous les jours avec mon collègue pour discuter des fonctionnalités, de la base de donnée, etc.
- <p>&nbsp;</p>Je rends aussi compte de mon activité d'une certaine manière via Github, ou encore la documentation que j'écris en parallèle.`}}},"3ème année":{"Réaliser un développement d'application":{AC1:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'>Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité </span><span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'> AC 1 : Optimiser les modèles de données de l’entreprise </span>",content:""}}}},U={key:0,class:"ac-container"},B=["innerHTML"],V=["innerHTML"],Q={key:1},$={__name:"competence",props:{annee:{type:String,default:"2ème année"},ac:{type:String,default:"Réaliser un développement d'application"}},setup(o){const e=o,n=v(()=>j[e.annee]&&j[e.annee][e.ac]),i=v(()=>n.value?j[e.annee][e.ac]:{}),c=v(()=>n.value?Object.keys(i.value).filter(s=>s.startsWith("AC")).map(s=>parseInt(s.replace("AC",""))).sort((s,d)=>s-d):[]);return(s,d)=>(t(),L(N,{title:e.ac},{description:_(()=>[n.value?(t(),r("div",U,[(t(!0),r(b,null,x(c.value,f=>{var m,y;return t(),r("div",{key:f,class:"ac-section"},[a("div",{class:"ac-title sticky-title",innerHTML:((m=i.value[`AC${f}`])==null?void 0:m.title)||""},null,8,B),a("div",{class:"ac-content",innerHTML:((y=i.value[`AC${f}`])==null?void 0:y.content)||""},null,8,V)])}),128))])):(t(),r("div",Q," Aucune donnée disponible pour cette compétence dans cette année. "))]),_:1},8,["title"]))}},H={class:"skills-container"},G={class:"selection-annee"},F=["onClick"],W={class:"content-layout"},K={class:"skills-sidebar"},Y={__name:"Skills",setup(o){const e=h(1),n=h(0),i=h(null),c=["1ère année","2ème année","3ème année"],s=[{title:"Réaliser un développement d'application"},{title:"Optimiser des applications"},{title:"Administrer des systèmes informatiques communicants complexes"},{title:"Gérer les données de l'information"},{title:"Conduire un projet"},{title:"Collaborer au sein d'une équipe informatique"}];function d(l){l.key==="ArrowLeft"?e.value=(e.value-1+c.length)%c.length:l.key==="ArrowRight"?e.value=(e.value+1)%c.length:l.key==="ArrowDown"?n.value=(n.value+1)%s.length:l.key==="ArrowUp"&&(n.value=(n.value-1+s.length)%s.length)}E(()=>{window.addEventListener("keydown",d)}),P(()=>{window.removeEventListener("keydown",d)});const f=l=>{e.value=l},m=l=>{n.value=l},y=()=>{i.value&&(i.value.scrollTop=0)};return M([e,n],()=>{y()}),(l,X)=>(t(),r("div",H,[a("div",G,[(t(),r(b,null,x(c,(g,p)=>a("div",{key:p,class:q({active:e.value===p}),onClick:w=>f(p)},u(g),11,F)),64))]),a("div",W,[a("div",K,[(t(),r(b,null,x(s,(g,p)=>A(D,{key:p,class:q([{active:n.value===p},"skill-card"]),title:g.title,onMouseenter:w=>m(p)},{default:_(()=>[a("div",{class:q([{active:n.value===p},"square"])},null,2)]),_:2},1032,["class","title","onMouseenter"])),64))]),a("div",{ref_key:"mainContentRef",ref:i,class:"main-content"},[A($,{ac:s[n.value].title,annee:c[e.value]},null,8,["ac","annee"])],512)])]))}},ee=C(Y,[["__scopeId","data-v-29c1fb79"]]);export{ee as default};
+ <p>&nbsp;</p>Je rends aussi compte de mon activité d'une certaine manière via Github, ou encore la documentation que j'écris en parallèle.`}}},"3ème année":{"Réaliser un développement d'application":{AC1:{title:"<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'>Optimiser une base de données, interagir avec une application et mettre en œuvre la sécurité </span><span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;'> AC 1 : Optimiser les modèles de données de l’entreprise </span>",content:""}}}},U={key:0,class:"ac-container"},B=["innerHTML"],V=["innerHTML"],Q={key:1},$={__name:"competence",props:{annee:{type:String,default:"2ème année"},ac:{type:String,default:"Réaliser un développement d'application"}},setup(t){const e=t,n=v(()=>j[e.annee]&&j[e.annee][e.ac]),i=v(()=>n.value?j[e.annee][e.ac]:{}),c=v(()=>n.value?Object.keys(i.value).filter(s=>s.startsWith("AC")).map(s=>parseInt(s.replace("AC",""))).sort((s,d)=>s-d):[]);return(s,d)=>(o(),L(N,{title:e.ac},{description:_(()=>[n.value?(o(),r("div",U,[(o(!0),r(b,null,x(c.value,f=>{var m,y;return o(),r("div",{key:f,class:"ac-section"},[a("div",{class:"ac-title sticky-title",innerHTML:((m=i.value[`AC${f}`])==null?void 0:m.title)||""},null,8,B),a("div",{class:"ac-content",innerHTML:((y=i.value[`AC${f}`])==null?void 0:y.content)||""},null,8,V)])}),128))])):(o(),r("div",Q," Aucune donnée disponible pour cette compétence dans cette année. "))]),_:1},8,["title"]))}},H={class:"skills-container"},G={class:"selection-annee"},F=["onClick"],W={class:"content-layout"},K={class:"skills-sidebar"},Y={__name:"Skills",setup(t){const e=h(1),n=h(0),i=h(null),c=["1ère année","2ème année","3ème année"],s=[{title:"Réaliser un développement d'application"},{title:"Optimiser des applications"},{title:"Administrer des systèmes informatiques communicants complexes"},{title:"Gérer les données de l'information"},{title:"Conduire un projet"},{title:"Collaborer au sein d'une équipe informatique"}];function d(l){l.key==="ArrowLeft"?e.value=(e.value-1+c.length)%c.length:l.key==="ArrowRight"?e.value=(e.value+1)%c.length:l.key==="ArrowDown"?n.value=(n.value+1)%s.length:l.key==="ArrowUp"&&(n.value=(n.value-1+s.length)%s.length)}E(()=>{window.addEventListener("keydown",d)}),P(()=>{window.removeEventListener("keydown",d)});const f=l=>{e.value=l},m=l=>{n.value=l},y=()=>{i.value&&(i.value.scrollTop=0)};return M([e,n],()=>{y()}),(l,X)=>(o(),r("div",H,[a("div",G,[(o(),r(b,null,x(c,(g,p)=>a("div",{key:p,class:q({active:e.value===p}),onClick:w=>f(p)},u(g),11,F)),64))]),a("div",W,[a("div",K,[(o(),r(b,null,x(s,(g,p)=>A(D,{key:p,class:q([{active:n.value===p},"skill-card"]),title:g.title,onMouseenter:w=>m(p)},{default:_(()=>[a("div",{class:q([{active:n.value===p},"square"])},null,2)]),_:2},1032,["class","title","onMouseenter"])),64))]),a("div",{ref_key:"mainContentRef",ref:i,class:"main-content"},[A($,{ac:s[n.value].title,annee:c[e.value]},null,8,["ac","annee"])],512)])]))}},ee=C(Y,[["__scopeId","data-v-29c1fb79"]]);export{ee as default};
