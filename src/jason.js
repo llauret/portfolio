@@ -1,12 +1,4 @@
 export default {
-    "1ère année": {
-        "Réaliser un développement d'application": {
-            "AC1": {
-                title  : "",
-                content: ""
-            }
-        }
-    },
     "2ème année": {
         "Réaliser un développement d'application"                      : {
             "AC1": {
@@ -1341,15 +1333,4 @@ export default {
             }
         }
     },
-    "3ème année": {
-        "Réaliser un développement d'application": {
-            "AC1": {
-                title  : "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'>Optimiser" +
-                    " une base de données, interagir avec une application et mettre en œuvre la sécurité </span>" +
-                    "<span style='font-size: 1.2rem; font-weight: bold; margin-bottom: 1rem;\'> AC 1 :" +
-                    " Optimiser les modèles de données de l’entreprise </span>",
-                content: ""
-            }
-        }
-    }
 }

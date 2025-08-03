@@ -19,7 +19,7 @@
 
         ■ Permet de veiller à la qualité des relevés sur ligne de production, et agir en conséquence.
         "
-        link-skills="/portfolio/#/skills"
+        link-skills="/portfolio/#/but2"
         title="Alternance - Numérisation processus papier"
     >
       <template #model3D>

@@ -26,7 +26,7 @@
     </div>
 
     <a v-if="link" :href="link" class="project-link" target="_blank">Voir le projet</a>
-    <a v-if="linkSkills" :href="linkSkills" class="project-link" target="_blank">Voir compétences (explication
+    <a v-if="linkSkills" :href="linkSkills" class="project-link" >Voir compétences (explication
       projet)</a>
 
   </div>

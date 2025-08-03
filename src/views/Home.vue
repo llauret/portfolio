@@ -4,25 +4,46 @@
       <h1>LAURET Lucas</h1>
 
       <p>
-        Développeur Full Stack actuellement en Alternance chez <a href="https://amphenol-fci-besancon.com/"
-                                                                  target="_blank">Amphenol
+        Etudiant en troisième année de BUT informatique à l'IUT de Belfort.
+        Développeur Full Stack en Alternance chez <a href="https://amphenol-fci-besancon.com/"
+                                                     target="_blank">Amphenol
         FCI</a>
         à
         Besançon.
       </p>
     </div>
-
-    <div class="box">
-      3
-      <mark>XP</mark>
-    </div>
   </div>
+  <div class="card-container">
+    <competence-card
+        description="Réaliser un développement d’application"
+        title="Compétences 1"
+    />
+    <competence-card
+        description="Optimiser des applications"
+        title="Compétences 2"
+    />
+    <competence-card
+        description="Collaborer au sein d'une équipe informatique"
+        title="Compétences 6"
+    />
+  </div>
+
 </template>
 <script setup>
 
+import CompetenceCard from "@/components/competence-card.vue";
 </script>
 
 <style scoped>
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+}
 
 .caflexparici {
   display: flex;
@@ -31,7 +52,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 80vh;
+  height: 60vh;
 }
 
 .caflexparici > div {

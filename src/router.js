@@ -6,7 +6,9 @@ const router = createRouter({
     }, {
         path: '/projects', name: 'projets', component: () => import('./views/Projects.vue')
     }, {
-        path: '/skills', name: 'competence', component: () => import('./views/Skills.vue')
+        path: '/but2', name: 'competence', component: () => import('./views/Skills.vue')
+    }, {
+        path: '/but3', name: 'competence3A', component: () => import('./views/BUT3.vue')
     }
     ],
 });
