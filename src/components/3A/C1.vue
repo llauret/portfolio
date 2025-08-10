@@ -58,8 +58,14 @@ function handleContentClick(event) {
   }
 }
 
-watch(() => route.params.file, (newFile) => {
-  loadContent(newFile);
+watch(() => route.params.file, async (newFile) => {
+  await loadContent(newFile);
+  const scrollContainer = document.querySelector('.container');
+  if (scrollContainer) {
+    scrollContainer.scrollTop = 0;
+  } else {
+    window.scrollTo(0, 0);
+  }
 }, {immediate: true});
 </script>
 
