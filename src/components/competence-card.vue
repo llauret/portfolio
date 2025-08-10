@@ -21,10 +21,6 @@
 </template>
 
 <script setup>
-import {useRouter} from 'vue-router';
-
-const router = useRouter();
-
 defineProps({
   title: String,
   skill: String,
@@ -35,10 +31,6 @@ defineProps({
     default: false
   }
 })
-
-const navToSkill = () => {
-  router.push('/but3');
-}
 
 </script>
 

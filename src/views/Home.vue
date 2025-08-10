@@ -14,18 +14,24 @@
     </div>
   </div>
   <div class="card-container">
-    <competence-card
-        description="Réaliser un développement d’application"
-        title="Compétences 1"
-    />
-    <competence-card
-        description="Optimiser des applications"
-        title="Compétences 2"
-    />
-    <competence-card
-        description="Collaborer au sein d'une équipe informatique"
-        title="Compétences 6"
-    />
+    <router-link to="/but3/C1">
+      <competence-card
+          description="Réaliser un développement d’application"
+          title="Compétences 1"
+      />
+    </router-link>
+    <router-link to="/but3/C2">
+      <competence-card
+          description="Optimiser des applications"
+          title="Compétences 2"
+      />
+    </router-link>
+    <router-link to="/but3/C6">
+      <competence-card
+          description="Collaborer au sein d'une équipe informatique"
+          title="Compétences 6"
+      />
+    </router-link>
   </div>
 
 </template>

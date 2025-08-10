@@ -8,6 +8,7 @@
     <slot></slot>
   </div>
 </template>
+
 <script setup>
 import {ref} from 'vue'
 
@@ -15,19 +16,21 @@ const hoverBar = ref(null);
 
 function onMouseMove(e) {
   const rect = e.currentTarget.getBoundingClientRect();
-  const scrollContainer = document.querySelector('.container');
-  const scrollTop = scrollContainer ? scrollContainer.scrollTop : 0;
-  hoverBar.value = e.clientY - rect.top + scrollTop - 40;
+  const scrollTop = e.currentTarget.scrollTop;
+  hoverBar.value = (e.clientY - rect.top + scrollTop) - 40;
 }
 
 function onClick(e) {
-  const rect = e.currentTarget.getBoundingClientRect();
-  const clickY = e.clientY - rect.top - 170;
-  const percent = clickY / rect.height;
+  const minimap = e.currentTarget;
+  const rect = minimap.getBoundingClientRect();
+
+  const clickY = e.clientY - rect.top + minimap.scrollTop;
+
+  const percent = clickY / minimap.scrollHeight;
 
   const scrollContainer = document.querySelector('.container') || window;
   const scrollHeight = scrollContainer === window
-      ? document.documentElement.scrollHeight - window.innerHeight
+      ? document.documentElement.scrollHeight - document.documentElement.clientHeight
       : scrollContainer.scrollHeight - scrollContainer.clientHeight;
 
   const targetScroll = percent * scrollHeight;
@@ -39,6 +42,7 @@ function onClick(e) {
   }
 }
 </script>
+
 <style scoped>
 .rikiki {
   font-size: 0.1rem;
@@ -50,6 +54,17 @@ function onClick(e) {
   user-select: none;
   height: 90vh;
   overflow: auto;
+}
+
+.hover-bar {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  pointer-events: none;
+  z-index: 10;
 }
 
 .rikiki img,

@@ -27,7 +27,7 @@
           <router-link to="/projects">Projets</router-link>
         </li>
         <li>
-          <router-link to="/but3">BUT3</router-link>
+          <router-link to="/but3/Contexte">BUT3</router-link>
         </li>
         <li>
           <router-link to="/but2">BUT2</router-link>

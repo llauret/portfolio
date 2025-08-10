@@ -1,6 +1,6 @@
 <template>
   <div class="supa-container">
-    <file-explorer @select-file="selectedFile = $event"></file-explorer>
+    <file-explorer></file-explorer>
     <div class="container">
       <C1 :file=selectedFile></C1>
       <mini-skelly>
@@ -13,9 +13,11 @@
 import C1 from "@/components/3A/C1.vue";
 import MiniSkelly from "@/components/mini-skelly.vue";
 import FileExplorer from "@/components/file-explorer.vue";
-import {ref} from "vue";
+import {useRoute} from "vue-router";
 
-const selectedFile = ref('Contexte');
+const route = useRoute();
+
+const selectedFile = route.path.split('but3/')[1];
 
 </script>
 <style scoped>

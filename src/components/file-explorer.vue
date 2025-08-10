@@ -27,7 +27,7 @@
           <span class="file-icon">📝</span>
           <span class="item-name">Compétence2.md</span>
         </div>
-        <div class="file-item" @click="selectFile('C2')">
+        <div class="file-item" @click="selectFile('C6')">
           <span class="file-indent"></span>
           <span class="file-icon">📝</span>
           <span class="item-name">Compétence6.md</span>
@@ -38,12 +38,13 @@
 </template>
 
 <script setup>
-import {defineEmits} from 'vue';
+import {useRouter} from 'vue-router';
 
-const emit = defineEmits(['selectFile']);
+const router = useRouter();
 
-function selectFile(file) {
-  emit('selectFile', file);
+const selectFile = (file) => {
+  router.push(`/but3/${file}`);
+  console.log(file);
 }
 </script>
 

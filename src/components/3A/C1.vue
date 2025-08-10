@@ -1,21 +1,17 @@
 <template>
   <div class="tronc">
-    <div v-html="htmlContent"></div>
+    <div @click="handleContentClick" v-html="htmlContent"></div>
   </div>
 </template>
 
 <script setup>
-import {ref, onMounted, watch} from 'vue';
+import {ref, watch} from 'vue';
 import {marked} from 'marked';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/github.css';
+import {useRoute} from 'vue-router';
 
-const props = defineProps({
-  file: {
-    type: String,
-  }
-});
-
+const route = useRoute();
 const htmlContent = ref('');
 
 marked.setOptions({
@@ -27,15 +23,19 @@ marked.setOptions({
   }
 });
 
-async function loadContent() {
+async function loadContent(filename) {
+  if (!filename) return;
   let rawContent = '';
-  if (props.file === 'C1') {
-    const mod = await import('@/docs/C1_C4.md?raw');
+  if (filename === 'C1') {
+    const mod = await import('@/docs/C1.md?raw');
     rawContent = mod.default;
-  } else if (props.file === 'C2') {
-    const mod = await import('@/docs/affichage.md?raw');
+  } else if (filename === 'C2') {
+    const mod = await import('@/docs/C2.md?raw');
     rawContent = mod.default;
-  } else if (props.file === 'Contexte') {
+  } else if (filename === 'C6') {
+    const mod = await import('@/docs/C6.md?raw');
+    rawContent = mod.default;
+  } else if (filename === 'Contexte') {
     const mod = await import('@/docs/Contexte.md?raw');
     rawContent = mod.default;
   } else {
@@ -44,9 +44,23 @@ async function loadContent() {
   htmlContent.value = marked.parse(rawContent);
 }
 
-onMounted(loadContent);
+function handleContentClick(event) {
+  const link = event.target.closest('a');
 
-watch(() => props.file, loadContent);
+  if (link && link.getAttribute('href').startsWith('#')) {
+    event.preventDefault();
+
+    const targetId = link.getAttribute('href').substring(1);
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({behavior: 'smooth'});
+    }
+  }
+}
+
+watch(() => route.params.file, (newFile) => {
+  loadContent(newFile);
+}, {immediate: true});
 </script>
 
 <style scoped>

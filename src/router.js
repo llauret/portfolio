@@ -8,7 +8,7 @@ const router = createRouter({
     }, {
         path: '/but2', name: 'competence', component: () => import('./views/Skills.vue')
     }, {
-        path: '/but3', name: 'competence3A', component: () => import('./views/BUT3.vue')
+        path: '/but3/:file', name: 'competence3A', component: () => import('./views/BUT3.vue'), props: true,
     }
     ],
 });
