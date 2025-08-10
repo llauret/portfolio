@@ -22,13 +22,13 @@
     </router-link>
     <router-link to="/but3/C2">
       <competence-card
-          description="Optimiser des applications"
+          description="Optimiser des applications - SAE"
           title="Compétences 2"
       />
     </router-link>
     <router-link to="/but3/C6">
       <competence-card
-          description="Collaborer au sein d'une équipe informatique"
+          description="Collaborer au sein d'une équipe informatique - SAE"
           title="Compétences 6"
       />
     </router-link>
