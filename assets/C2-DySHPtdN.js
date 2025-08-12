@@ -196,4 +196,13 @@ fonctionnalités, pour alerter par exemple les personnes concernées lorsqu'il y
 En termes de complexité algorithmique, le traitement du worker est linéaire, O(n * m), où n est le nombre de données du\r
 relevé et m est le nombre de colonnes. Cela signifie que le temps de traitement augmente proportionnellement au nombre\r
 de données et de colonnes, ce qui est acceptable pour la taille des données traitées dans cette application. Cela ne\r
-prend pas beaucoup de temps, pour ne pas dire que c'est instantané (~0 ms).`;export{e as default};
+prend pas beaucoup de temps, pour ne pas dire que c'est instantané (~0 ms).\r
+\r
+En réalité cela importe peu, car les données traitées sont de tailles équivalentes.\r
+\r
+# Bilan\r
+\r
+Au sein de cette alternance, j'ai pu évaluer mon code en terme de performance comprendre et analyser pourquoi tel ou tel élément était plus performant qu'un autre.\r
+Surtout côté serveur, où j'ai pu optimiser les temps de réponse des requêtes.\r
+J'ai pu prendre conscience de l'importance de la performance dans une application, que ce soit côté serveur ou côté client.\r
+Bien évidemment, tout est à relativiser,, cependant, même pour une application interne, il est important de prendre en compte la performance.`;export{e as default};

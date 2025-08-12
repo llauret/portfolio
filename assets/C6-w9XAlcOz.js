@@ -38,7 +38,7 @@ plus tard par un outil de centralisation si l’équipe s’agrandit. Là encore
 documentation technique afin que son éventuelle remise en question future parte d’une base argumentée.\r
 \r
 <figure>\r
-  <img alt="Vitepress" height="900" src="/portfolio/images_portfolio/exemple_doc.png" width="100%"/>\r
+  <img alt="Vitepress" height="900" src="/portfolio/images_portfolio/grafana.png" width="100%"/>\r
   <figcaption style="font-size: 1.2em;">\r
     Illustration 1 : Grafana pour le monitoring de la base de données\r
   </figcaption>\r
@@ -83,4 +83,11 @@ VitePress : l’un porte la structure et les décisions, l’autre incarne les c
 En conclusion, même en l’absence d’équipe autour de moi, j’ai bâti un environnement de travail qui facilite la reprise :\r
 code refactorisé selon des patterns reconnus, choix technologiques justifiés, base de cache évolutive, logging structuré\r
 et début de monitoring. Cette approche démontre à la fois la maîtrise de concepts techniques et la capacité à les mettre\r
-en œuvre de façon structurée, transférable et orientée vers la collaboration à venir.`;export{e as default};
+en œuvre de façon structurée, transférable et orientée vers la collaboration à venir.\r
+\r
+# Bilan\r
+\r
+Au cours de cette alternance, j'ai pu faire de la veille technique, pour non seulement apprendre mais aussi faire évoluer l'application interne.\r
+Cette veille, ce développement a permis en quelque sorte à préparer l'entreprise à un changement informatique, à une évolution des procédures.\r
+Avec le développement de l'application interne, cela a permis de faire évoluer les procédures de l'entreprise, de les rendre plus efficaces et plus simples\r
+et à l'avenir de proposer d'autres applications internes pour d'autres services.`;export{e as default};
