@@ -205,4 +205,4 @@ En réalité cela importe peu, car les données traitées sont de tailles équiv
 Au sein de cette alternance, j'ai pu évaluer mon code en terme de performance comprendre et analyser pourquoi tel ou tel élément était plus performant qu'un autre.\r
 Surtout côté serveur, où j'ai pu optimiser les temps de réponse des requêtes.\r
 J'ai pu prendre conscience de l'importance de la performance dans une application, que ce soit côté serveur ou côté client.\r
-Bien évidemment, tout est à relativiser,, cependant, même pour une application interne, il est important de prendre en compte la performance.`;export{e as default};
+Bien évidemment, tout est à relativiser, cependant, même pour une application interne, il est important de prendre en compte la performance.`;export{e as default};

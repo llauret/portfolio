@@ -4,10 +4,9 @@ const e=`# Compétence 1 – Réaliser un développement d’application\r
 \r
 Au cours de ma **deuxième** année d'**alternance** au sein de l'entreprise Amphenol FCI Besançon j'ai été amené à\r
 poursuivre le développement de l'application que j'ai pu réaliser en première année\r
-afin **d'ajouter des fonctionnalités**. L'application est une application de gestion de feuille process, c'est-à-\r
-dire que l'on peut y réaliser des relevés de caractéristiques sur des produits en production.\r
-L'application est développée en **VueJS** côté frontend et **NodeJS** côté backend avec une base de données **PostgreSQL\r
-**.\r
+afin **d'ajouter des fonctionnalités**. L'application est une application de gestion de feuille process, c'est-à-dire\r
+que l'on peut y réaliser des relevés de caractéristiques sur des produits en production.\r
+L'application est développée en **VueJS** côté frontend et **NodeJS** côté backend avec une base de données **PostgreSQL**.\r
 \r
 L'application, pour rappel, permet de réaliser des **relevés** de caractéristique sur des produits en production afin\r
 d'être conforme aux spécifications.\r
@@ -136,7 +135,7 @@ Cette approche garantit une traçabilité complète et des statistiques fiables 
 \r
 ## Interface de sélection des données\r
 \r
-Le dashboard propose un système de filtrage composé de quatre sélecteurs principaux visible sur le panneau de gauche (\r
+Le dashboard propose un système de filtrage composé de quatre sélecteurs principaux visibles sur le panneau de gauche (\r
 voir [Trace 1](#Solution)) :\r
 \r
 - **Ligne de production** : Filtrage par ligne active uniquement\r
