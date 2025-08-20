@@ -240,7 +240,7 @@ cela retournera en temps réel les produits correspondant au produit écrit, vis
 voir [Trace 1](#Solution)). Cela fonctionne avec la propriété LIKE en SQL où je récupère via v-model et donc une liaison\r
 bi directionnelle le nom du produit.\r
 \r
-Ainsi si par exemple j'écris dans le champ input **« F_77310-11 »** cela va retourner tout les produits commençant\r
+Ainsi si par exemple j'écris dans le champ input **« F_77310-11 »** cela va retourner tous les produits commençant\r
 par **« F_77310-11 »**. La recherche est en temps réel, ce qui pourrait causer d'éventuels problèmes si l'\r
 application\r
 était accessible à un grand nombre d'utilisateur et en simultané du fait qu'à chaque input il y a une requête effectuée\r
@@ -253,7 +253,7 @@ Debouncing »** qui est d'ajouter un temps d'arrêt avant que la requêtes ne s'
 pour brider les requêtes envoyées et in fine éviter la surcharge.\r
 \r
 Une fois le produit entré, l'utilisateur peut, si il le souhaite sélectionner ces produits. Par défaut si l'utilisateur\r
-clique sur **« Générer les statistiques »** cela prendra tout les produits commençant par, ici **« F_77310-11 »**\r
+clique sur **« Générer les statistiques »** cela prendra tous les produits commençant par, ici **« F_77310-11 »**\r
 dans la\r
 génération du graphique, si il sélectionne ces produits alors, je stocke ces derniers dans un tableau, en vérifiant si\r
 il\r
